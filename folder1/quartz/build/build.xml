@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v3.5 NT (http://www.xmlspy.com) by  () -->
+<project default="build">
+	<property file="build.properties" />
+	<path id="quartz.path">
+		<path refid="build.server.classpath" />
+		<pathelement path="${build.server.classes}" />
+		<fileset dir="${build.quartzRoot}/www/WEB-INF/lib/">
+			<include name="**/*.jar" />
+		</fileset>
+
+	</path>
+	<import file="${tomcat.home}/bin/catalina-tasks.xml" />
+	<target name="build" depends="build.server.classes,build.reloadWebApp" />
+	<target name="createDirs">
+		<mkdir dir="java/classes" />
+		<mkdir dir="www/WEB-INF/classes" />
+	</target>
+	<target name="build.server.classes" depends="createDirs">
+		<delete includeEmptyDirs="true">
+			<fileset dir="${build.quartzRoot}/build/java/classes" includes="**/*" />
+		</delete>
+		<javac target="1.5" debug="true" debuglevel="lines,source" nowarn="true" srcdir="${build.quartzRoot}/java/src" destdir="${build.quartzRoot}/build/java/classes" deprecation="${deprecation}">
+			<classpath refid="quartz.path" />
+
+			<include name="**/*" />
+			
+		</javac>
+		<copy todir="${build.quartzRoot}/java/classes" preservelastmodified="true" overwrite="yes">
+			<fileset dir="${build.quartzRoot}/java/src" includes="**/*.properties" />
+			<fileset dir="${build.quartzRoot}/java/src" includes="**/*.xml" />
+		</copy>
+		<jar jarfile="${build.quartzRoot}/www/WEB-INF/lib/brainfuseserver_quartz.jar" basedir="${build.quartzRoot}/java/classes" excludes="*.jar,*.pdb, *.tmp">
+			<manifest>
+				<attribute name="Built-By" value="${user.name}" />
+				<attribute name="Jar-Name" value="BrainfuseQuartz" />
+				<attribute name="Version" value="build.vss.quartz.label" />
+			</manifest>
+		</jar>
+		<delete>
+			<fileset dir="${build.quartzRoot}/www/WEB-INF/lib" includes="bizobjects*.jar"/>
+		</delete>
+		<copy todir="${build.quartzRoot}/www/WEB-INF/lib">
+				<path refid="build.server.classpath"/>
+		</copy>
+		
+		<echo message="build.java.server.notRequired ${build.java.server.notRequired}" />
+		<echo message="build.java.skipJavaDoc ${build.skipJavaDoc}" />
+		<condition property="build.server.skipJavaDoc" value="true">
+			<or>
+				<equals arg1="${build.java.server.notRequired}" arg2="true" />
+				<equals arg1="${build.skipJavaDoc}" arg2="true" />
+			</or>
+		</condition>
+	</target>
+	<target name="build.reloadWebApp">
+
+		<echo message="Reload the quartz server" />
+		<reload url="${build.jsp.serverUrl}" username="${build.jsp.username}" password="${build.jsp.password}" path="/quartz" />
+	</target>
+
+</project>
