@@ -1,0 +1,1684 @@
+2004-10-20 09:50:35,996 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] config.DefaultConfiguration (DefaultConfiguration.java:89) - Loading global messages from ApplicationResources
+2004-10-20 09:50:36,026 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] velocity.VelocityManager (VelocityManager.java:220) - Initializing velocity using 'velocity.properties'
+2004-10-20 09:50:36,367 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] velocity.VelocityManager (VelocityManager.java:220) - Initializing velocity using 'velocity.properties'
+2004-10-20 09:50:36,617 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] xml.JobInitializationPlugin (JobInitializationPlugin.java:250) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 09:50:36,617 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] xml.JobInitializationPlugin (JobInitializationPlugin.java:250) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:11:32,680 INFO  [http-8080-Processor4] xwork.DefaultActionInvocation (DefaultActionInvocation.java:290) - Executing action method = start
+2004-10-20 11:15:35,890 INFO  [http-8080-Processor1] xml.JobInitializationPlugin (JobInitializationPlugin.java:250) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:15:35,890 INFO  [http-8080-Processor1] xml.JobInitializationPlugin (JobInitializationPlugin.java:250) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:15:35,910 ERROR [http-8080-Processor1] dispatcher.ServletDispatcher (ServletDispatcher.java:283) - Could not execute action
+java.lang.NullPointerException
+	at org.quartz.ui.web.action.schedule.ListJobs.execute(ListJobs.java:43)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:168)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.DefaultActionProxy.execute(DefaultActionProxy.java:115)
+	at com.opensymphony.webwork.dispatcher.ServletDispatcher.serviceAction(ServletDispatcher.java:278)
+	at com.opensymphony.webwork.dispatcher.ServletDispatcher.service(ServletDispatcher.java:248)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at com.opensymphony.webwork.lifecycle.RequestLifecycleFilter.doFilter(RequestLifecycleFilter.java:75)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.parsePage(PageFilter.java:142)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.doFilter(PageFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at org.securityfilter.filter.SecurityFilter.doFilter(SecurityFilter.java:188)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:214)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardContextValve.invokeInternal(StandardContextValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:152)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:929)
+	at org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:793)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:702)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:571)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:644)
+	at java.lang.Thread.run(Thread.java:534)
+2004-10-20 11:15:42,199 INFO  [http-8080-Processor4] xml.JobInitializationPlugin (JobInitializationPlugin.java:250) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:15:42,199 INFO  [http-8080-Processor4] xml.JobInitializationPlugin (JobInitializationPlugin.java:250) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:15:42,209 ERROR [http-8080-Processor4] dispatcher.ServletDispatcher (ServletDispatcher.java:283) - Could not execute action
+java.lang.NullPointerException
+	at org.quartz.ui.web.action.schedule.ListJobs.execute(ListJobs.java:43)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:168)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.DefaultActionProxy.execute(DefaultActionProxy.java:115)
+	at com.opensymphony.webwork.dispatcher.ServletDispatcher.serviceAction(ServletDispatcher.java:278)
+	at com.opensymphony.webwork.dispatcher.ServletDispatcher.service(ServletDispatcher.java:248)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at com.opensymphony.webwork.lifecycle.RequestLifecycleFilter.doFilter(RequestLifecycleFilter.java:75)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.parsePage(PageFilter.java:142)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.doFilter(PageFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at org.securityfilter.filter.SecurityFilter.doFilter(SecurityFilter.java:188)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:214)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardContextValve.invokeInternal(StandardContextValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:152)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:929)
+	at org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:793)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:702)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:571)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:644)
+	at java.lang.Thread.run(Thread.java:534)
+2004-10-20 11:15:42,479 INFO  [http-8080-Processor1] xml.JobInitializationPlugin (JobInitializationPlugin.java:250) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:15:42,479 INFO  [http-8080-Processor1] xml.JobInitializationPlugin (JobInitializationPlugin.java:250) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:15:42,479 ERROR [http-8080-Processor1] dispatcher.ServletDispatcher (ServletDispatcher.java:283) - Could not execute action
+java.lang.NullPointerException
+	at org.quartz.ui.web.action.schedule.ListJobs.execute(ListJobs.java:43)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:168)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.DefaultActionProxy.execute(DefaultActionProxy.java:115)
+	at com.opensymphony.webwork.dispatcher.ServletDispatcher.serviceAction(ServletDispatcher.java:278)
+	at com.opensymphony.webwork.dispatcher.ServletDispatcher.service(ServletDispatcher.java:248)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at com.opensymphony.webwork.lifecycle.RequestLifecycleFilter.doFilter(RequestLifecycleFilter.java:75)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.parsePage(PageFilter.java:142)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.doFilter(PageFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at org.securityfilter.filter.SecurityFilter.doFilter(SecurityFilter.java:188)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:214)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardContextValve.invokeInternal(StandardContextValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:152)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:929)
+	at org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:793)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:702)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:571)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:644)
+	at java.lang.Thread.run(Thread.java:534)
+2004-10-20 11:15:42,729 INFO  [http-8080-Processor4] xml.JobInitializationPlugin (JobInitializationPlugin.java:250) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:15:42,729 INFO  [http-8080-Processor4] xml.JobInitializationPlugin (JobInitializationPlugin.java:250) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:15:42,729 ERROR [http-8080-Processor4] dispatcher.ServletDispatcher (ServletDispatcher.java:283) - Could not execute action
+java.lang.NullPointerException
+	at org.quartz.ui.web.action.schedule.ListJobs.execute(ListJobs.java:43)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:168)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.DefaultActionProxy.execute(DefaultActionProxy.java:115)
+	at com.opensymphony.webwork.dispatcher.ServletDispatcher.serviceAction(ServletDispatcher.java:278)
+	at com.opensymphony.webwork.dispatcher.ServletDispatcher.service(ServletDispatcher.java:248)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at com.opensymphony.webwork.lifecycle.RequestLifecycleFilter.doFilter(RequestLifecycleFilter.java:75)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.parsePage(PageFilter.java:142)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.doFilter(PageFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at org.securityfilter.filter.SecurityFilter.doFilter(SecurityFilter.java:188)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:214)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardContextValve.invokeInternal(StandardContextValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:152)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:929)
+	at org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:793)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:702)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:571)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:644)
+	at java.lang.Thread.run(Thread.java:534)
+2004-10-20 11:15:42,950 INFO  [http-8080-Processor1] xml.JobInitializationPlugin (JobInitializationPlugin.java:250) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:15:42,950 INFO  [http-8080-Processor1] xml.JobInitializationPlugin (JobInitializationPlugin.java:250) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:15:42,950 ERROR [http-8080-Processor1] dispatcher.ServletDispatcher (ServletDispatcher.java:283) - Could not execute action
+java.lang.NullPointerException
+	at org.quartz.ui.web.action.schedule.ListJobs.execute(ListJobs.java:43)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:168)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.DefaultActionProxy.execute(DefaultActionProxy.java:115)
+	at com.opensymphony.webwork.dispatcher.ServletDispatcher.serviceAction(ServletDispatcher.java:278)
+	at com.opensymphony.webwork.dispatcher.ServletDispatcher.service(ServletDispatcher.java:248)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at com.opensymphony.webwork.lifecycle.RequestLifecycleFilter.doFilter(RequestLifecycleFilter.java:75)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.parsePage(PageFilter.java:142)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.doFilter(PageFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at org.securityfilter.filter.SecurityFilter.doFilter(SecurityFilter.java:188)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:214)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardContextValve.invokeInternal(StandardContextValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:152)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:929)
+	at org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:793)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:702)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:571)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:644)
+	at java.lang.Thread.run(Thread.java:534)
+2004-10-20 11:15:45,644 INFO  [http-8080-Processor4] xml.JobInitializationPlugin (JobInitializationPlugin.java:250) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:15:45,644 INFO  [http-8080-Processor4] xml.JobInitializationPlugin (JobInitializationPlugin.java:250) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:15:45,644 ERROR [http-8080-Processor4] dispatcher.ServletDispatcher (ServletDispatcher.java:283) - Could not execute action
+java.lang.NullPointerException
+	at org.quartz.ui.web.action.schedule.ListTriggers.execute(ListTriggers.java:38)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:168)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.DefaultActionProxy.execute(DefaultActionProxy.java:115)
+	at com.opensymphony.webwork.dispatcher.ServletDispatcher.serviceAction(ServletDispatcher.java:278)
+	at com.opensymphony.webwork.dispatcher.ServletDispatcher.service(ServletDispatcher.java:248)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at com.opensymphony.webwork.lifecycle.RequestLifecycleFilter.doFilter(RequestLifecycleFilter.java:75)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.parsePage(PageFilter.java:142)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.doFilter(PageFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at org.securityfilter.filter.SecurityFilter.doFilter(SecurityFilter.java:188)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:214)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardContextValve.invokeInternal(StandardContextValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:152)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:929)
+	at org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:793)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:702)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:571)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:644)
+	at java.lang.Thread.run(Thread.java:534)
+2004-10-20 11:15:46,745 INFO  [http-8080-Processor1] xml.JobInitializationPlugin (JobInitializationPlugin.java:250) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:15:46,745 INFO  [http-8080-Processor1] xml.JobInitializationPlugin (JobInitializationPlugin.java:250) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:15:46,745 ERROR [http-8080-Processor1] dispatcher.ServletDispatcher (ServletDispatcher.java:283) - Could not execute action
+java.lang.NullPointerException
+	at org.quartz.ui.web.action.schedule.ListTriggers.execute(ListTriggers.java:38)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:168)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.DefaultActionProxy.execute(DefaultActionProxy.java:115)
+	at com.opensymphony.webwork.dispatcher.ServletDispatcher.serviceAction(ServletDispatcher.java:278)
+	at com.opensymphony.webwork.dispatcher.ServletDispatcher.service(ServletDispatcher.java:248)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at com.opensymphony.webwork.lifecycle.RequestLifecycleFilter.doFilter(RequestLifecycleFilter.java:75)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.parsePage(PageFilter.java:142)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.doFilter(PageFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at org.securityfilter.filter.SecurityFilter.doFilter(SecurityFilter.java:188)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:214)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardContextValve.invokeInternal(StandardContextValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:152)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:929)
+	at org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:793)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:702)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:571)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:644)
+	at java.lang.Thread.run(Thread.java:534)
+2004-10-20 11:16:03,049 INFO  [http-8080-Processor1] xwork.DefaultActionInvocation (DefaultActionInvocation.java:290) - Executing action method = list
+2004-10-20 11:16:09,768 INFO  [http-8080-Processor1] schedule.ScheduleControler (ScheduleControler.java:41) - command is = 
+2004-10-20 11:16:09,778 INFO  [http-8080-Processor1] xml.JobInitializationPlugin (JobInitializationPlugin.java:250) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:16:09,778 INFO  [http-8080-Processor1] xml.JobInitializationPlugin (JobInitializationPlugin.java:250) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:33:36,353 INFO  [http-8080-Processor2] config.DefaultConfiguration (DefaultConfiguration.java:89) - Loading global messages from ApplicationResources
+2004-10-20 11:33:36,373 INFO  [http-8080-Processor2] velocity.VelocityManager (VelocityManager.java:220) - Initializing velocity using 'velocity.properties'
+2004-10-20 11:33:36,624 INFO  [http-8080-Processor2] velocity.VelocityManager (VelocityManager.java:220) - Initializing velocity using 'velocity.properties'
+2004-10-20 11:33:36,784 INFO  [http-8080-Processor2] xml.JobInitializationPlugin (JobInitializationPlugin.java:249) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:33:36,784 INFO  [http-8080-Processor2] xml.JobInitializationPlugin (JobInitializationPlugin.java:249) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:33:36,794 INFO  [http-8080-Processor2] management.ShutdownHookPlugin (ShutdownHookPlugin.java:131) - Registering Quartz shutdown hook.
+2004-10-20 11:33:36,794 INFO  [http-8080-Processor2] management.ShutdownHookPlugin (ShutdownHookPlugin.java:131) - Registering Quartz shutdown hook.
+2004-10-20 11:33:36,794 INFO  [http-8080-Processor2] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:487) - Using thread monitor-based data access locking (synchronization).
+2004-10-20 11:33:36,794 INFO  [http-8080-Processor2] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:487) - Using thread monitor-based data access locking (synchronization).
+2004-10-20 11:33:54,730 INFO  [http-8080-Processor2] schedule.ScheduleControler (ScheduleControler.java:41) - command is = 
+2004-10-20 11:33:54,730 INFO  [http-8080-Processor2] xml.JobInitializationPlugin (JobInitializationPlugin.java:249) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:33:54,730 INFO  [http-8080-Processor2] xml.JobInitializationPlugin (JobInitializationPlugin.java:249) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:33:54,730 INFO  [http-8080-Processor2] management.ShutdownHookPlugin (ShutdownHookPlugin.java:131) - Registering Quartz shutdown hook.
+2004-10-20 11:33:54,730 INFO  [http-8080-Processor2] management.ShutdownHookPlugin (ShutdownHookPlugin.java:131) - Registering Quartz shutdown hook.
+2004-10-20 11:33:54,730 INFO  [http-8080-Processor2] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:487) - Using thread monitor-based data access locking (synchronization).
+2004-10-20 11:33:54,730 INFO  [http-8080-Processor2] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:487) - Using thread monitor-based data access locking (synchronization).
+2004-10-20 11:35:41,904 INFO  [http-8080-Processor8] schedule.ScheduleControler (ScheduleControler.java:41) - command is = 
+2004-10-20 11:35:41,914 INFO  [http-8080-Processor8] xml.JobInitializationPlugin (JobInitializationPlugin.java:249) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:35:41,914 INFO  [http-8080-Processor8] xml.JobInitializationPlugin (JobInitializationPlugin.java:249) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:35:41,914 INFO  [http-8080-Processor8] management.ShutdownHookPlugin (ShutdownHookPlugin.java:131) - Registering Quartz shutdown hook.
+2004-10-20 11:35:41,914 INFO  [http-8080-Processor8] management.ShutdownHookPlugin (ShutdownHookPlugin.java:131) - Registering Quartz shutdown hook.
+2004-10-20 11:35:41,914 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:487) - Using thread monitor-based data access locking (synchronization).
+2004-10-20 11:35:41,914 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:487) - Using thread monitor-based data access locking (synchronization).
+2004-10-20 11:35:42,595 INFO  [http-8080-Processor8] schedule.ScheduleControler (ScheduleControler.java:41) - command is = 
+2004-10-20 11:35:42,595 INFO  [http-8080-Processor8] xml.JobInitializationPlugin (JobInitializationPlugin.java:249) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:35:42,595 INFO  [http-8080-Processor8] xml.JobInitializationPlugin (JobInitializationPlugin.java:249) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:35:42,605 INFO  [http-8080-Processor8] management.ShutdownHookPlugin (ShutdownHookPlugin.java:131) - Registering Quartz shutdown hook.
+2004-10-20 11:35:42,605 INFO  [http-8080-Processor8] management.ShutdownHookPlugin (ShutdownHookPlugin.java:131) - Registering Quartz shutdown hook.
+2004-10-20 11:35:42,605 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:487) - Using thread monitor-based data access locking (synchronization).
+2004-10-20 11:35:42,605 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:487) - Using thread monitor-based data access locking (synchronization).
+2004-10-20 11:35:47,271 INFO  [http-8080-Processor8] config.DefaultConfiguration (DefaultConfiguration.java:89) - Loading global messages from ApplicationResources
+2004-10-20 11:35:47,292 INFO  [http-8080-Processor8] velocity.VelocityManager (VelocityManager.java:220) - Initializing velocity using 'velocity.properties'
+2004-10-20 11:35:47,772 INFO  [http-8080-Processor8] velocity.VelocityManager (VelocityManager.java:220) - Initializing velocity using 'velocity.properties'
+2004-10-20 11:35:47,962 INFO  [http-8080-Processor8] xml.JobInitializationPlugin (JobInitializationPlugin.java:249) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:35:47,962 INFO  [http-8080-Processor8] xml.JobInitializationPlugin (JobInitializationPlugin.java:249) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:35:47,962 INFO  [http-8080-Processor8] management.ShutdownHookPlugin (ShutdownHookPlugin.java:131) - Registering Quartz shutdown hook.
+2004-10-20 11:35:47,962 INFO  [http-8080-Processor8] management.ShutdownHookPlugin (ShutdownHookPlugin.java:131) - Registering Quartz shutdown hook.
+2004-10-20 11:35:47,962 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:487) - Using thread monitor-based data access locking (synchronization).
+2004-10-20 11:35:47,962 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:487) - Using thread monitor-based data access locking (synchronization).
+2004-10-20 11:35:48,633 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:617) - Removed 0 Volatile Trigger(s).
+2004-10-20 11:35:48,633 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:617) - Removed 0 Volatile Trigger(s).
+2004-10-20 11:35:48,633 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:625) - Removed 0 Volatile Job(s).
+2004-10-20 11:35:48,633 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:625) - Removed 0 Volatile Job(s).
+2004-10-20 11:35:48,874 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:663) - Freed 0 triggers from 'acquired' / 'blocked' state.
+2004-10-20 11:35:48,874 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:663) - Freed 0 triggers from 'acquired' / 'blocked' state.
+2004-10-20 11:35:49,074 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:676) - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2004-10-20 11:35:49,074 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:676) - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2004-10-20 11:35:49,074 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:690) - Recovery complete.
+2004-10-20 11:35:49,074 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:690) - Recovery complete.
+2004-10-20 11:35:49,094 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:696) - Removed 0 'complete' triggers.
+2004-10-20 11:35:49,094 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:696) - Removed 0 'complete' triggers.
+2004-10-20 11:35:49,134 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:702) - Removed 0 stale fired job entries.
+2004-10-20 11:35:49,134 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:702) - Removed 0 stale fired job entries.
+2004-10-20 11:35:49,204 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreTX (JobStoreTX.java:76) - JobStoreTX initialized.
+2004-10-20 11:35:49,204 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreTX (JobStoreTX.java:76) - JobStoreTX initialized.
+2004-10-20 11:35:49,214 INFO  [http-8080-Processor8] impl.StdSchedulerFactory (StdSchedulerFactory.java:892) - Quartz scheduler 'bfSched' initialized from specified file: 'E:\Brainfuse\conf\bf_quartz.properties'
+2004-10-20 11:35:49,214 INFO  [http-8080-Processor8] impl.StdSchedulerFactory (StdSchedulerFactory.java:892) - Quartz scheduler 'bfSched' initialized from specified file: 'E:\Brainfuse\conf\bf_quartz.properties'
+2004-10-20 11:35:49,214 INFO  [http-8080-Processor8] impl.StdSchedulerFactory (StdSchedulerFactory.java:896) - Quartz scheduler version: 1.4.2
+2004-10-20 11:35:49,214 INFO  [http-8080-Processor8] impl.StdSchedulerFactory (StdSchedulerFactory.java:896) - Quartz scheduler version: 1.4.2
+2004-10-20 11:35:49,234 INFO  [http-8080-Processor8] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:362) - Parsing XML file: quartz_jobs2.xml with systemId: null validating: false validating schema: null
+2004-10-20 11:35:49,234 INFO  [http-8080-Processor8] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:362) - Parsing XML file: quartz_jobs2.xml with systemId: null validating: false validating schema: null
+2004-10-20 11:35:50,767 ERROR [http-8080-Processor8] digester.Digester (Digester.java:1060) - End event threw exception
+org.apache.commons.beanutils.ConversionException: Unparseable date: "2004-08-23"
+	at org.quartz.xml.JobSchedulingDataProcessor$DateConverter.convert(JobSchedulingDataProcessor.java:952)
+	at org.apache.commons.beanutils.ConvertUtilsBean.convert(ConvertUtilsBean.java:428)
+	at org.apache.commons.beanutils.BeanUtilsBean.setProperty(BeanUtilsBean.java:1002)
+	at org.apache.commons.beanutils.BeanUtils.setProperty(BeanUtils.java:313)
+	at org.apache.commons.digester.BeanPropertySetterRule.end(BeanPropertySetterRule.java:244)
+	at org.apache.commons.digester.Digester.endElement(Digester.java:1058)
+	at org.apache.xerces.parsers.AbstractSAXParser.endElement(Unknown Source)
+	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.apache.commons.digester.Digester.parse(Digester.java:1548)
+	at org.quartz.xml.JobSchedulingDataProcessor.processFile(JobSchedulingDataProcessor.java:369)
+	at org.quartz.xml.JobSchedulingDataProcessor.processFileAndScheduleJobs(JobSchedulingDataProcessor.java:394)
+	at org.quartz.plugins.xml.JobInitializationPlugin.processFile(JobInitializationPlugin.java:341)
+	at org.quartz.plugins.xml.JobInitializationPlugin.start(JobInitializationPlugin.java:315)
+	at org.quartz.core.QuartzScheduler.startPlugins(QuartzScheduler.java:1800)
+	at org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:367)
+	at org.quartz.impl.StdScheduler.start(StdScheduler.java:149)
+	at org.quartz.ee.servlet.QuartzInitializerServlet.init(QuartzInitializerServlet.java:126)
+	at org.quartz.ui.web.init.DefinitionInitializer.init(DefinitionInitializer.java:30)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1019)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:862)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:3991)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4335)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3021)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:947)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:381)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:697)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:214)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardContextValve.invokeInternal(StandardContextValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:152)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:929)
+	at org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:793)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:702)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:571)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:644)
+	at java.lang.Thread.run(Thread.java:534)
+Caused by: java.text.ParseException: Unparseable date: "2004-08-23"
+	at java.text.DateFormat.parse(DateFormat.java:335)
+	at org.quartz.xml.JobSchedulingDataProcessor$DateConverter.parseDate(JobSchedulingDataProcessor.java:964)
+	at org.quartz.xml.JobSchedulingDataProcessor$DateConverter.convert(JobSchedulingDataProcessor.java:941)
+	... 58 more
+2004-10-20 11:35:50,777 ERROR [http-8080-Processor8] xml.JobInitializationPlugin (JobInitializationPlugin.java:344) - Error scheduling jobs: Error at (52, 52: Unparseable date: "2004-08-23"
+org.apache.commons.beanutils.ConversionException: Unparseable date: "2004-08-23"
+	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2540)
+	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2566)
+	at org.apache.commons.digester.Digester.endElement(Digester.java:1061)
+	at org.apache.xerces.parsers.AbstractSAXParser.endElement(Unknown Source)
+	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.apache.commons.digester.Digester.parse(Digester.java:1548)
+	at org.quartz.xml.JobSchedulingDataProcessor.processFile(JobSchedulingDataProcessor.java:369)
+	at org.quartz.xml.JobSchedulingDataProcessor.processFileAndScheduleJobs(JobSchedulingDataProcessor.java:394)
+	at org.quartz.plugins.xml.JobInitializationPlugin.processFile(JobInitializationPlugin.java:341)
+	at org.quartz.plugins.xml.JobInitializationPlugin.start(JobInitializationPlugin.java:315)
+	at org.quartz.core.QuartzScheduler.startPlugins(QuartzScheduler.java:1800)
+	at org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:367)
+	at org.quartz.impl.StdScheduler.start(StdScheduler.java:149)
+	at org.quartz.ee.servlet.QuartzInitializerServlet.init(QuartzInitializerServlet.java:126)
+	at org.quartz.ui.web.init.DefinitionInitializer.init(DefinitionInitializer.java:30)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1019)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:862)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:3991)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4335)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3021)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:947)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:381)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:697)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:214)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardContextValve.invokeInternal(StandardContextValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:152)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:929)
+	at org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:793)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:702)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:571)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:644)
+	at java.lang.Thread.run(Thread.java:534)
+2004-10-20 11:35:50,777 ERROR [http-8080-Processor8] xml.JobInitializationPlugin (JobInitializationPlugin.java:344) - Error scheduling jobs: Error at (52, 52: Unparseable date: "2004-08-23"
+org.apache.commons.beanutils.ConversionException: Unparseable date: "2004-08-23"
+	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2540)
+	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2566)
+	at org.apache.commons.digester.Digester.endElement(Digester.java:1061)
+	at org.apache.xerces.parsers.AbstractSAXParser.endElement(Unknown Source)
+	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.apache.commons.digester.Digester.parse(Digester.java:1548)
+	at org.quartz.xml.JobSchedulingDataProcessor.processFile(JobSchedulingDataProcessor.java:369)
+	at org.quartz.xml.JobSchedulingDataProcessor.processFileAndScheduleJobs(JobSchedulingDataProcessor.java:394)
+	at org.quartz.plugins.xml.JobInitializationPlugin.processFile(JobInitializationPlugin.java:341)
+	at org.quartz.plugins.xml.JobInitializationPlugin.start(JobInitializationPlugin.java:315)
+	at org.quartz.core.QuartzScheduler.startPlugins(QuartzScheduler.java:1800)
+	at org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:367)
+	at org.quartz.impl.StdScheduler.start(StdScheduler.java:149)
+	at org.quartz.ee.servlet.QuartzInitializerServlet.init(QuartzInitializerServlet.java:126)
+	at org.quartz.ui.web.init.DefinitionInitializer.init(DefinitionInitializer.java:30)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1019)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:862)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:3991)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4335)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3021)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:947)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:381)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:697)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:214)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardContextValve.invokeInternal(StandardContextValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:152)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:929)
+	at org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:793)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:702)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:571)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:644)
+	at java.lang.Thread.run(Thread.java:534)
+2004-10-20 11:35:50,787 INFO  [http-8080-Processor8] core.QuartzScheduler (QuartzScheduler.java:370) - Scheduler bfSched_$_1 started.
+2004-10-20 11:35:50,787 INFO  [http-8080-Processor8] core.QuartzScheduler (QuartzScheduler.java:370) - Scheduler bfSched_$_1 started.
+2004-10-20 11:37:19,734 INFO  [http-8080-Processor3] config.DefaultConfiguration (DefaultConfiguration.java:89) - Loading global messages from ApplicationResources
+2004-10-20 11:37:19,764 INFO  [http-8080-Processor3] velocity.VelocityManager (VelocityManager.java:220) - Initializing velocity using 'velocity.properties'
+2004-10-20 11:37:20,025 INFO  [http-8080-Processor3] velocity.VelocityManager (VelocityManager.java:220) - Initializing velocity using 'velocity.properties'
+2004-10-20 11:37:20,245 INFO  [http-8080-Processor3] xml.JobInitializationPlugin (JobInitializationPlugin.java:249) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:37:20,245 INFO  [http-8080-Processor3] xml.JobInitializationPlugin (JobInitializationPlugin.java:249) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:37:20,255 INFO  [http-8080-Processor3] management.ShutdownHookPlugin (ShutdownHookPlugin.java:131) - Registering Quartz shutdown hook.
+2004-10-20 11:37:20,255 INFO  [http-8080-Processor3] management.ShutdownHookPlugin (ShutdownHookPlugin.java:131) - Registering Quartz shutdown hook.
+2004-10-20 11:37:20,255 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:487) - Using thread monitor-based data access locking (synchronization).
+2004-10-20 11:37:20,255 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:487) - Using thread monitor-based data access locking (synchronization).
+2004-10-20 11:37:20,526 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:617) - Removed 0 Volatile Trigger(s).
+2004-10-20 11:37:20,526 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:617) - Removed 0 Volatile Trigger(s).
+2004-10-20 11:37:20,526 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:625) - Removed 0 Volatile Job(s).
+2004-10-20 11:37:20,526 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:625) - Removed 0 Volatile Job(s).
+2004-10-20 11:37:20,736 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:663) - Freed 0 triggers from 'acquired' / 'blocked' state.
+2004-10-20 11:37:20,736 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:663) - Freed 0 triggers from 'acquired' / 'blocked' state.
+2004-10-20 11:37:20,896 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:676) - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2004-10-20 11:37:20,896 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:676) - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2004-10-20 11:37:20,896 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:690) - Recovery complete.
+2004-10-20 11:37:20,896 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:690) - Recovery complete.
+2004-10-20 11:37:20,916 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:696) - Removed 0 'complete' triggers.
+2004-10-20 11:37:20,916 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:696) - Removed 0 'complete' triggers.
+2004-10-20 11:37:20,966 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:702) - Removed 0 stale fired job entries.
+2004-10-20 11:37:20,966 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:702) - Removed 0 stale fired job entries.
+2004-10-20 11:37:21,046 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreTX (JobStoreTX.java:76) - JobStoreTX initialized.
+2004-10-20 11:37:21,046 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreTX (JobStoreTX.java:76) - JobStoreTX initialized.
+2004-10-20 11:37:21,046 INFO  [http-8080-Processor3] impl.StdSchedulerFactory (StdSchedulerFactory.java:892) - Quartz scheduler 'bfSched' initialized from specified file: 'E:\Brainfuse\conf\bf_quartz.properties'
+2004-10-20 11:37:21,046 INFO  [http-8080-Processor3] impl.StdSchedulerFactory (StdSchedulerFactory.java:892) - Quartz scheduler 'bfSched' initialized from specified file: 'E:\Brainfuse\conf\bf_quartz.properties'
+2004-10-20 11:37:21,046 INFO  [http-8080-Processor3] impl.StdSchedulerFactory (StdSchedulerFactory.java:896) - Quartz scheduler version: 1.4.2
+2004-10-20 11:37:21,046 INFO  [http-8080-Processor3] impl.StdSchedulerFactory (StdSchedulerFactory.java:896) - Quartz scheduler version: 1.4.2
+2004-10-20 11:37:21,066 INFO  [http-8080-Processor3] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:362) - Parsing XML file: quartz_jobs2.xml with systemId: null validating: false validating schema: null
+2004-10-20 11:37:21,066 INFO  [http-8080-Processor3] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:362) - Parsing XML file: quartz_jobs2.xml with systemId: null validating: false validating schema: null
+2004-10-20 11:37:21,096 ERROR [http-8080-Processor3] digester.Digester (Digester.java:1275) - Begin event threw exception
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at org.apache.commons.beanutils.PropertyUtilsBean.invokeMethod(PropertyUtilsBean.java:1773)
+	at org.apache.commons.beanutils.PropertyUtilsBean.setSimpleProperty(PropertyUtilsBean.java:1759)
+	at org.apache.commons.beanutils.PropertyUtilsBean.setNestedProperty(PropertyUtilsBean.java:1648)
+	at org.apache.commons.beanutils.PropertyUtilsBean.setProperty(PropertyUtilsBean.java:1677)
+	at org.apache.commons.beanutils.BeanUtilsBean.setProperty(BeanUtilsBean.java:1022)
+	at org.apache.commons.beanutils.BeanUtilsBean.populate(BeanUtilsBean.java:811)
+	at org.apache.commons.beanutils.BeanUtils.populate(BeanUtils.java:298)
+	at org.apache.commons.digester.SetPropertiesRule.begin(SetPropertiesRule.java:259)
+	at org.apache.commons.digester.Rule.begin(Rule.java:200)
+	at org.apache.commons.digester.Digester.startElement(Digester.java:1273)
+	at org.apache.xerces.parsers.AbstractSAXParser.startElement(Unknown Source)
+	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanStartElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.apache.commons.digester.Digester.parse(Digester.java:1548)
+	at org.quartz.xml.JobSchedulingDataProcessor.processFile(JobSchedulingDataProcessor.java:369)
+	at org.quartz.xml.JobSchedulingDataProcessor.processFileAndScheduleJobs(JobSchedulingDataProcessor.java:394)
+	at org.quartz.plugins.xml.JobInitializationPlugin.processFile(JobInitializationPlugin.java:341)
+	at org.quartz.plugins.xml.JobInitializationPlugin.start(JobInitializationPlugin.java:315)
+	at org.quartz.core.QuartzScheduler.startPlugins(QuartzScheduler.java:1800)
+	at org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:367)
+	at org.quartz.impl.StdScheduler.start(StdScheduler.java:149)
+	at org.quartz.ee.servlet.QuartzInitializerServlet.init(QuartzInitializerServlet.java:126)
+	at org.quartz.ui.web.init.DefinitionInitializer.init(DefinitionInitializer.java:30)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1019)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:862)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:3991)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4335)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3021)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:947)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:381)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:697)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:214)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardContextValve.invokeInternal(StandardContextValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:152)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:929)
+	at org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:793)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:702)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:571)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:644)
+	at java.lang.Thread.run(Thread.java:534)
+Caused by: java.lang.ClassNotFoundException: com.eggtheory.brainfuse.server.servercomponent.EveryTwoWeeksCalendar
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1340)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1189)
+	at org.quartz.xml.CalendarBundle.createCalendar(CalendarBundle.java:134)
+	at org.quartz.xml.CalendarBundle.setClassName(CalendarBundle.java:86)
+	... 67 more
+2004-10-20 11:37:21,126 ERROR [http-8080-Processor3] xml.JobInitializationPlugin (JobInitializationPlugin.java:344) - Error scheduling jobs: Error at (9, 113: com.eggtheory.brainfuse.server.servercomponent.EveryTwoWeeksCalendar
+java.lang.ClassNotFoundException: com.eggtheory.brainfuse.server.servercomponent.EveryTwoWeeksCalendar
+	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2540)
+	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2566)
+	at org.apache.commons.digester.Digester.startElement(Digester.java:1276)
+	at org.apache.xerces.parsers.AbstractSAXParser.startElement(Unknown Source)
+	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanStartElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.apache.commons.digester.Digester.parse(Digester.java:1548)
+	at org.quartz.xml.JobSchedulingDataProcessor.processFile(JobSchedulingDataProcessor.java:369)
+	at org.quartz.xml.JobSchedulingDataProcessor.processFileAndScheduleJobs(JobSchedulingDataProcessor.java:394)
+	at org.quartz.plugins.xml.JobInitializationPlugin.processFile(JobInitializationPlugin.java:341)
+	at org.quartz.plugins.xml.JobInitializationPlugin.start(JobInitializationPlugin.java:315)
+	at org.quartz.core.QuartzScheduler.startPlugins(QuartzScheduler.java:1800)
+	at org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:367)
+	at org.quartz.impl.StdScheduler.start(StdScheduler.java:149)
+	at org.quartz.ee.servlet.QuartzInitializerServlet.init(QuartzInitializerServlet.java:126)
+	at org.quartz.ui.web.init.DefinitionInitializer.init(DefinitionInitializer.java:30)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1019)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:862)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:3991)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4335)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3021)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:947)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:381)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:697)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:214)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardContextValve.invokeInternal(StandardContextValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:152)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:929)
+	at org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:793)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:702)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:571)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:644)
+	at java.lang.Thread.run(Thread.java:534)
+2004-10-20 11:37:21,126 ERROR [http-8080-Processor3] xml.JobInitializationPlugin (JobInitializationPlugin.java:344) - Error scheduling jobs: Error at (9, 113: com.eggtheory.brainfuse.server.servercomponent.EveryTwoWeeksCalendar
+java.lang.ClassNotFoundException: com.eggtheory.brainfuse.server.servercomponent.EveryTwoWeeksCalendar
+	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2540)
+	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2566)
+	at org.apache.commons.digester.Digester.startElement(Digester.java:1276)
+	at org.apache.xerces.parsers.AbstractSAXParser.startElement(Unknown Source)
+	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanStartElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.apache.commons.digester.Digester.parse(Digester.java:1548)
+	at org.quartz.xml.JobSchedulingDataProcessor.processFile(JobSchedulingDataProcessor.java:369)
+	at org.quartz.xml.JobSchedulingDataProcessor.processFileAndScheduleJobs(JobSchedulingDataProcessor.java:394)
+	at org.quartz.plugins.xml.JobInitializationPlugin.processFile(JobInitializationPlugin.java:341)
+	at org.quartz.plugins.xml.JobInitializationPlugin.start(JobInitializationPlugin.java:315)
+	at org.quartz.core.QuartzScheduler.startPlugins(QuartzScheduler.java:1800)
+	at org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:367)
+	at org.quartz.impl.StdScheduler.start(StdScheduler.java:149)
+	at org.quartz.ee.servlet.QuartzInitializerServlet.init(QuartzInitializerServlet.java:126)
+	at org.quartz.ui.web.init.DefinitionInitializer.init(DefinitionInitializer.java:30)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1019)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:862)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:3991)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4335)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3021)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:947)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:381)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:697)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:214)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardContextValve.invokeInternal(StandardContextValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:152)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:929)
+	at org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:793)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:702)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:571)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:644)
+	at java.lang.Thread.run(Thread.java:534)
+2004-10-20 11:37:21,126 INFO  [http-8080-Processor3] core.QuartzScheduler (QuartzScheduler.java:370) - Scheduler bfSched_$_1 started.
+2004-10-20 11:37:21,126 INFO  [http-8080-Processor3] core.QuartzScheduler (QuartzScheduler.java:370) - Scheduler bfSched_$_1 started.
+2004-10-20 11:39:10,714 INFO  [http-8080-Processor8] config.DefaultConfiguration (DefaultConfiguration.java:89) - Loading global messages from ApplicationResources
+2004-10-20 11:39:10,724 INFO  [http-8080-Processor8] velocity.VelocityManager (VelocityManager.java:220) - Initializing velocity using 'velocity.properties'
+2004-10-20 11:39:10,974 INFO  [http-8080-Processor8] velocity.VelocityManager (VelocityManager.java:220) - Initializing velocity using 'velocity.properties'
+2004-10-20 11:39:11,175 INFO  [http-8080-Processor8] xml.JobInitializationPlugin (JobInitializationPlugin.java:249) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:39:11,175 INFO  [http-8080-Processor8] xml.JobInitializationPlugin (JobInitializationPlugin.java:249) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:39:11,175 INFO  [http-8080-Processor8] management.ShutdownHookPlugin (ShutdownHookPlugin.java:131) - Registering Quartz shutdown hook.
+2004-10-20 11:39:11,175 INFO  [http-8080-Processor8] management.ShutdownHookPlugin (ShutdownHookPlugin.java:131) - Registering Quartz shutdown hook.
+2004-10-20 11:39:11,175 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:487) - Using thread monitor-based data access locking (synchronization).
+2004-10-20 11:39:11,175 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:487) - Using thread monitor-based data access locking (synchronization).
+2004-10-20 11:39:11,435 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:617) - Removed 0 Volatile Trigger(s).
+2004-10-20 11:39:11,435 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:617) - Removed 0 Volatile Trigger(s).
+2004-10-20 11:39:11,435 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:625) - Removed 0 Volatile Job(s).
+2004-10-20 11:39:11,435 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:625) - Removed 0 Volatile Job(s).
+2004-10-20 11:39:11,625 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:663) - Freed 0 triggers from 'acquired' / 'blocked' state.
+2004-10-20 11:39:11,625 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:663) - Freed 0 triggers from 'acquired' / 'blocked' state.
+2004-10-20 11:39:11,806 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:676) - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2004-10-20 11:39:11,806 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:676) - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2004-10-20 11:39:11,806 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:690) - Recovery complete.
+2004-10-20 11:39:11,806 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:690) - Recovery complete.
+2004-10-20 11:39:11,836 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:696) - Removed 0 'complete' triggers.
+2004-10-20 11:39:11,836 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:696) - Removed 0 'complete' triggers.
+2004-10-20 11:39:11,876 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:702) - Removed 0 stale fired job entries.
+2004-10-20 11:39:11,876 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:702) - Removed 0 stale fired job entries.
+2004-10-20 11:39:11,956 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreTX (JobStoreTX.java:76) - JobStoreTX initialized.
+2004-10-20 11:39:11,956 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreTX (JobStoreTX.java:76) - JobStoreTX initialized.
+2004-10-20 11:39:11,956 INFO  [http-8080-Processor8] impl.StdSchedulerFactory (StdSchedulerFactory.java:892) - Quartz scheduler 'bfSched' initialized from specified file: 'E:\Brainfuse\conf\bf_quartz.properties'
+2004-10-20 11:39:11,956 INFO  [http-8080-Processor8] impl.StdSchedulerFactory (StdSchedulerFactory.java:892) - Quartz scheduler 'bfSched' initialized from specified file: 'E:\Brainfuse\conf\bf_quartz.properties'
+2004-10-20 11:39:11,956 INFO  [http-8080-Processor8] impl.StdSchedulerFactory (StdSchedulerFactory.java:896) - Quartz scheduler version: 1.4.2
+2004-10-20 11:39:11,956 INFO  [http-8080-Processor8] impl.StdSchedulerFactory (StdSchedulerFactory.java:896) - Quartz scheduler version: 1.4.2
+2004-10-20 11:39:11,976 INFO  [http-8080-Processor8] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:362) - Parsing XML file: quartz_jobs2.xml with systemId: null validating: false validating schema: null
+2004-10-20 11:39:11,976 INFO  [http-8080-Processor8] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:362) - Parsing XML file: quartz_jobs2.xml with systemId: null validating: false validating schema: null
+2004-10-20 11:39:15,942 ERROR [http-8080-Processor8] digester.Digester (Digester.java:1060) - End event threw exception
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at org.apache.commons.beanutils.MethodUtils.invokeMethod(MethodUtils.java:216)
+	at org.apache.commons.digester.SetNextRule.end(SetNextRule.java:256)
+	at org.apache.commons.digester.Rule.end(Rule.java:276)
+	at org.apache.commons.digester.Digester.endElement(Digester.java:1058)
+	at org.apache.xerces.parsers.AbstractSAXParser.endElement(Unknown Source)
+	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.apache.commons.digester.Digester.parse(Digester.java:1548)
+	at org.quartz.xml.JobSchedulingDataProcessor.processFile(JobSchedulingDataProcessor.java:369)
+	at org.quartz.xml.JobSchedulingDataProcessor.processFileAndScheduleJobs(JobSchedulingDataProcessor.java:394)
+	at org.quartz.plugins.xml.JobInitializationPlugin.processFile(JobInitializationPlugin.java:341)
+	at org.quartz.plugins.xml.JobInitializationPlugin.start(JobInitializationPlugin.java:315)
+	at org.quartz.core.QuartzScheduler.startPlugins(QuartzScheduler.java:1800)
+	at org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:367)
+	at org.quartz.impl.StdScheduler.start(StdScheduler.java:149)
+	at org.quartz.ee.servlet.QuartzInitializerServlet.init(QuartzInitializerServlet.java:126)
+	at org.quartz.ui.web.init.DefinitionInitializer.init(DefinitionInitializer.java:30)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1019)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:862)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:3991)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4335)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3021)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:947)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:381)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:697)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:214)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardContextValve.invokeInternal(StandardContextValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:152)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:929)
+	at org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:793)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:702)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:571)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:644)
+	at java.lang.Thread.run(Thread.java:534)
+Caused by: java.lang.NoClassDefFoundError: com/eggtheory/brainfuse/utils/DateUtils
+	at com.eggtheory.brainfuse.server.servercomponent.EveryTwoWeeksCalendar.isTimeIncluded(EveryTwoWeeksCalendar.java:75)
+	at org.quartz.CronTrigger.computeFirstFireTime(CronTrigger.java:1083)
+	at org.quartz.core.QuartzScheduler.rescheduleJob(QuartzScheduler.java:714)
+	at org.quartz.impl.StdScheduler.rescheduleJob(StdScheduler.java:280)
+	at org.quartz.xml.JobSchedulingDataProcessor.scheduleJob(JobSchedulingDataProcessor.java:518)
+	at org.quartz.xml.JobSchedulingDataProcessor.scheduleJob(JobSchedulingDataProcessor.java:467)
+	... 61 more
+2004-10-20 11:39:15,952 ERROR [http-8080-Processor8] xml.JobInitializationPlugin (JobInitializationPlugin.java:344) - Error scheduling jobs: Error at (103, 11: null
+java.lang.reflect.InvocationTargetException
+	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2540)
+	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2566)
+	at org.apache.commons.digester.Digester.endElement(Digester.java:1061)
+	at org.apache.xerces.parsers.AbstractSAXParser.endElement(Unknown Source)
+	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.apache.commons.digester.Digester.parse(Digester.java:1548)
+	at org.quartz.xml.JobSchedulingDataProcessor.processFile(JobSchedulingDataProcessor.java:369)
+	at org.quartz.xml.JobSchedulingDataProcessor.processFileAndScheduleJobs(JobSchedulingDataProcessor.java:394)
+	at org.quartz.plugins.xml.JobInitializationPlugin.processFile(JobInitializationPlugin.java:341)
+	at org.quartz.plugins.xml.JobInitializationPlugin.start(JobInitializationPlugin.java:315)
+	at org.quartz.core.QuartzScheduler.startPlugins(QuartzScheduler.java:1800)
+	at org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:367)
+	at org.quartz.impl.StdScheduler.start(StdScheduler.java:149)
+	at org.quartz.ee.servlet.QuartzInitializerServlet.init(QuartzInitializerServlet.java:126)
+	at org.quartz.ui.web.init.DefinitionInitializer.init(DefinitionInitializer.java:30)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1019)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:862)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:3991)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4335)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3021)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:947)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:381)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:697)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:214)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardContextValve.invokeInternal(StandardContextValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:152)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:929)
+	at org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:793)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:702)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:571)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:644)
+	at java.lang.Thread.run(Thread.java:534)
+2004-10-20 11:39:15,952 ERROR [http-8080-Processor8] xml.JobInitializationPlugin (JobInitializationPlugin.java:344) - Error scheduling jobs: Error at (103, 11: null
+java.lang.reflect.InvocationTargetException
+	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2540)
+	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2566)
+	at org.apache.commons.digester.Digester.endElement(Digester.java:1061)
+	at org.apache.xerces.parsers.AbstractSAXParser.endElement(Unknown Source)
+	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.apache.commons.digester.Digester.parse(Digester.java:1548)
+	at org.quartz.xml.JobSchedulingDataProcessor.processFile(JobSchedulingDataProcessor.java:369)
+	at org.quartz.xml.JobSchedulingDataProcessor.processFileAndScheduleJobs(JobSchedulingDataProcessor.java:394)
+	at org.quartz.plugins.xml.JobInitializationPlugin.processFile(JobInitializationPlugin.java:341)
+	at org.quartz.plugins.xml.JobInitializationPlugin.start(JobInitializationPlugin.java:315)
+	at org.quartz.core.QuartzScheduler.startPlugins(QuartzScheduler.java:1800)
+	at org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:367)
+	at org.quartz.impl.StdScheduler.start(StdScheduler.java:149)
+	at org.quartz.ee.servlet.QuartzInitializerServlet.init(QuartzInitializerServlet.java:126)
+	at org.quartz.ui.web.init.DefinitionInitializer.init(DefinitionInitializer.java:30)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1019)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:862)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:3991)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4335)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3021)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:947)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:381)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:697)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:214)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardContextValve.invokeInternal(StandardContextValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:152)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:929)
+	at org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:793)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:702)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:571)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:644)
+	at java.lang.Thread.run(Thread.java:534)
+2004-10-20 11:39:15,952 INFO  [http-8080-Processor8] core.QuartzScheduler (QuartzScheduler.java:370) - Scheduler bfSched_$_1 started.
+2004-10-20 11:39:15,952 INFO  [http-8080-Processor8] core.QuartzScheduler (QuartzScheduler.java:370) - Scheduler bfSched_$_1 started.
+2004-10-20 11:40:12,012 INFO  [QuartzScheduler_bfSched-1_MisfireHandler] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:733) - Handling 1 triggers that missed their scheduled fire-time.
+2004-10-20 11:40:12,012 INFO  [QuartzScheduler_bfSched-1_MisfireHandler] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:733) - Handling 1 triggers that missed their scheduled fire-time.
+2004-10-20 11:40:13,424 INFO  [bfSched_Worker-1] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:40:13 10/20/2004
+2004-10-20 11:40:13,424 INFO  [bfSched_Worker-1] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:40:13 10/20/2004
+2004-10-20 11:40:14,496 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:40:14 10/20/2004
+2004-10-20 11:40:14,496 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:40:14 10/20/2004
+2004-10-20 11:40:17,109 INFO  [bfSched_Worker-1] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:40:17 10/20/2004 and reports: null
+2004-10-20 11:40:17,109 INFO  [bfSched_Worker-1] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:40:17 10/20/2004 and reports: null
+2004-10-20 11:40:17,109 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:40:17 10/20/2004 and reports: null
+2004-10-20 11:40:17,109 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:40:17 10/20/2004 and reports: null
+2004-10-20 11:43:14,845 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] config.DefaultConfiguration (DefaultConfiguration.java:89) - Loading global messages from ApplicationResources
+2004-10-20 11:43:14,855 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] velocity.VelocityManager (VelocityManager.java:220) - Initializing velocity using 'velocity.properties'
+2004-10-20 11:43:15,125 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] velocity.VelocityManager (VelocityManager.java:220) - Initializing velocity using 'velocity.properties'
+2004-10-20 11:43:15,306 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] xml.JobInitializationPlugin (JobInitializationPlugin.java:249) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:43:15,306 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] xml.JobInitializationPlugin (JobInitializationPlugin.java:249) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:43:15,306 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] management.ShutdownHookPlugin (ShutdownHookPlugin.java:131) - Registering Quartz shutdown hook.
+2004-10-20 11:43:15,306 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] management.ShutdownHookPlugin (ShutdownHookPlugin.java:131) - Registering Quartz shutdown hook.
+2004-10-20 11:43:15,306 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:487) - Using thread monitor-based data access locking (synchronization).
+2004-10-20 11:43:15,306 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:487) - Using thread monitor-based data access locking (synchronization).
+2004-10-20 11:43:15,586 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:617) - Removed 0 Volatile Trigger(s).
+2004-10-20 11:43:15,586 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:617) - Removed 0 Volatile Trigger(s).
+2004-10-20 11:43:15,586 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:625) - Removed 0 Volatile Job(s).
+2004-10-20 11:43:15,586 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:625) - Removed 0 Volatile Job(s).
+2004-10-20 11:43:15,806 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:663) - Freed 0 triggers from 'acquired' / 'blocked' state.
+2004-10-20 11:43:15,806 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:663) - Freed 0 triggers from 'acquired' / 'blocked' state.
+2004-10-20 11:43:15,987 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:676) - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2004-10-20 11:43:15,987 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:676) - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2004-10-20 11:43:15,987 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:690) - Recovery complete.
+2004-10-20 11:43:15,987 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:690) - Recovery complete.
+2004-10-20 11:43:16,017 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:696) - Removed 0 'complete' triggers.
+2004-10-20 11:43:16,017 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:696) - Removed 0 'complete' triggers.
+2004-10-20 11:43:16,067 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:702) - Removed 0 stale fired job entries.
+2004-10-20 11:43:16,067 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:702) - Removed 0 stale fired job entries.
+2004-10-20 11:43:16,137 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreTX (JobStoreTX.java:76) - JobStoreTX initialized.
+2004-10-20 11:43:16,137 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreTX (JobStoreTX.java:76) - JobStoreTX initialized.
+2004-10-20 11:43:16,137 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] impl.StdSchedulerFactory (StdSchedulerFactory.java:892) - Quartz scheduler 'bfSched' initialized from specified file: 'E:\Brainfuse\conf\bf_quartz.properties'
+2004-10-20 11:43:16,137 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] impl.StdSchedulerFactory (StdSchedulerFactory.java:892) - Quartz scheduler 'bfSched' initialized from specified file: 'E:\Brainfuse\conf\bf_quartz.properties'
+2004-10-20 11:43:16,137 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] impl.StdSchedulerFactory (StdSchedulerFactory.java:896) - Quartz scheduler version: 1.4.2
+2004-10-20 11:43:16,137 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] impl.StdSchedulerFactory (StdSchedulerFactory.java:896) - Quartz scheduler version: 1.4.2
+2004-10-20 11:43:16,157 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:362) - Parsing XML file: quartz_jobs2.xml with systemId: null validating: false validating schema: null
+2004-10-20 11:43:16,157 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:362) - Parsing XML file: quartz_jobs2.xml with systemId: null validating: false validating schema: null
+2004-10-20 11:43:22,146 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:409) - Scheduling 4 parsed jobs.
+2004-10-20 11:43:22,146 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:409) - Scheduling 4 parsed jobs.
+2004-10-20 11:43:22,897 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] core.QuartzScheduler (QuartzScheduler.java:370) - Scheduler bfSched_$_1 started.
+2004-10-20 11:43:22,897 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] core.QuartzScheduler (QuartzScheduler.java:370) - Scheduler bfSched_$_1 started.
+2004-10-20 11:43:24,519 INFO  [http-8080-Processor3] config.DefaultConfiguration (DefaultConfiguration.java:89) - Loading global messages from ApplicationResources
+2004-10-20 11:43:24,529 INFO  [http-8080-Processor3] velocity.VelocityManager (VelocityManager.java:220) - Initializing velocity using 'velocity.properties'
+2004-10-20 11:43:24,779 INFO  [http-8080-Processor3] velocity.VelocityManager (VelocityManager.java:220) - Initializing velocity using 'velocity.properties'
+2004-10-20 11:43:24,970 INFO  [http-8080-Processor3] xml.JobInitializationPlugin (JobInitializationPlugin.java:249) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:43:24,970 INFO  [http-8080-Processor3] xml.JobInitializationPlugin (JobInitializationPlugin.java:249) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:43:24,970 INFO  [http-8080-Processor3] management.ShutdownHookPlugin (ShutdownHookPlugin.java:131) - Registering Quartz shutdown hook.
+2004-10-20 11:43:24,970 INFO  [http-8080-Processor3] management.ShutdownHookPlugin (ShutdownHookPlugin.java:131) - Registering Quartz shutdown hook.
+2004-10-20 11:43:24,970 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:487) - Using thread monitor-based data access locking (synchronization).
+2004-10-20 11:43:24,970 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:487) - Using thread monitor-based data access locking (synchronization).
+2004-10-20 11:43:25,260 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:617) - Removed 0 Volatile Trigger(s).
+2004-10-20 11:43:25,260 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:617) - Removed 0 Volatile Trigger(s).
+2004-10-20 11:43:25,260 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:625) - Removed 0 Volatile Job(s).
+2004-10-20 11:43:25,260 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:625) - Removed 0 Volatile Job(s).
+2004-10-20 11:43:25,460 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:663) - Freed 0 triggers from 'acquired' / 'blocked' state.
+2004-10-20 11:43:25,460 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:663) - Freed 0 triggers from 'acquired' / 'blocked' state.
+2004-10-20 11:43:25,560 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:733) - Handling 1 triggers that missed their scheduled fire-time.
+2004-10-20 11:43:25,560 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:733) - Handling 1 triggers that missed their scheduled fire-time.
+2004-10-20 11:43:26,181 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:676) - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2004-10-20 11:43:26,181 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:676) - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2004-10-20 11:43:26,181 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:690) - Recovery complete.
+2004-10-20 11:43:26,181 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:690) - Recovery complete.
+2004-10-20 11:43:26,201 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:696) - Removed 0 'complete' triggers.
+2004-10-20 11:43:26,201 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:696) - Removed 0 'complete' triggers.
+2004-10-20 11:43:26,251 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:702) - Removed 0 stale fired job entries.
+2004-10-20 11:43:26,251 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:702) - Removed 0 stale fired job entries.
+2004-10-20 11:43:26,332 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreTX (JobStoreTX.java:76) - JobStoreTX initialized.
+2004-10-20 11:43:26,332 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreTX (JobStoreTX.java:76) - JobStoreTX initialized.
+2004-10-20 11:43:26,332 INFO  [http-8080-Processor3] impl.StdSchedulerFactory (StdSchedulerFactory.java:892) - Quartz scheduler 'bfSched' initialized from specified file: 'E:\Brainfuse\conf\bf_quartz.properties'
+2004-10-20 11:43:26,332 INFO  [http-8080-Processor3] impl.StdSchedulerFactory (StdSchedulerFactory.java:892) - Quartz scheduler 'bfSched' initialized from specified file: 'E:\Brainfuse\conf\bf_quartz.properties'
+2004-10-20 11:43:26,332 INFO  [http-8080-Processor3] impl.StdSchedulerFactory (StdSchedulerFactory.java:896) - Quartz scheduler version: 1.4.2
+2004-10-20 11:43:26,332 INFO  [http-8080-Processor3] impl.StdSchedulerFactory (StdSchedulerFactory.java:896) - Quartz scheduler version: 1.4.2
+2004-10-20 11:43:26,352 INFO  [http-8080-Processor3] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:362) - Parsing XML file: quartz_jobs2.xml with systemId: null validating: false validating schema: null
+2004-10-20 11:43:26,352 INFO  [http-8080-Processor3] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:362) - Parsing XML file: quartz_jobs2.xml with systemId: null validating: false validating schema: null
+2004-10-20 11:43:27,784 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:43:27 10/20/2004
+2004-10-20 11:43:27,784 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:43:27 10/20/2004
+2004-10-20 11:43:28,565 INFO  [bfSched_Worker-2] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:43:28 10/20/2004
+2004-10-20 11:43:28,565 INFO  [bfSched_Worker-2] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:43:28 10/20/2004
+2004-10-20 11:43:30,868 INFO  [http-8080-Processor3] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:409) - Scheduling 4 parsed jobs.
+2004-10-20 11:43:30,868 INFO  [http-8080-Processor3] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:409) - Scheduling 4 parsed jobs.
+2004-10-20 11:43:31,138 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:43:31 10/20/2004 and reports: null
+2004-10-20 11:43:31,138 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:43:31 10/20/2004 and reports: null
+2004-10-20 11:43:31,138 INFO  [bfSched_Worker-2] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:43:31 10/20/2004 and reports: null
+2004-10-20 11:43:31,138 INFO  [bfSched_Worker-2] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:43:31 10/20/2004 and reports: null
+2004-10-20 11:43:31,539 INFO  [http-8080-Processor3] core.QuartzScheduler (QuartzScheduler.java:370) - Scheduler bfSched_$_1 started.
+2004-10-20 11:43:31,539 INFO  [http-8080-Processor3] core.QuartzScheduler (QuartzScheduler.java:370) - Scheduler bfSched_$_1 started.
+2004-10-20 11:44:06,329 INFO  [http-8080-Processor8] config.DefaultConfiguration (DefaultConfiguration.java:89) - Loading global messages from ApplicationResources
+2004-10-20 11:44:06,349 INFO  [http-8080-Processor8] velocity.VelocityManager (VelocityManager.java:220) - Initializing velocity using 'velocity.properties'
+2004-10-20 11:44:06,620 INFO  [http-8080-Processor8] velocity.VelocityManager (VelocityManager.java:220) - Initializing velocity using 'velocity.properties'
+2004-10-20 11:44:06,830 INFO  [http-8080-Processor8] xml.JobInitializationPlugin (JobInitializationPlugin.java:249) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:44:06,830 INFO  [http-8080-Processor8] xml.JobInitializationPlugin (JobInitializationPlugin.java:249) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:44:06,830 INFO  [http-8080-Processor8] management.ShutdownHookPlugin (ShutdownHookPlugin.java:131) - Registering Quartz shutdown hook.
+2004-10-20 11:44:06,830 INFO  [http-8080-Processor8] management.ShutdownHookPlugin (ShutdownHookPlugin.java:131) - Registering Quartz shutdown hook.
+2004-10-20 11:44:06,830 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:487) - Using thread monitor-based data access locking (synchronization).
+2004-10-20 11:44:06,830 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:487) - Using thread monitor-based data access locking (synchronization).
+2004-10-20 11:44:07,080 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:617) - Removed 0 Volatile Trigger(s).
+2004-10-20 11:44:07,080 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:617) - Removed 0 Volatile Trigger(s).
+2004-10-20 11:44:07,080 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:625) - Removed 0 Volatile Job(s).
+2004-10-20 11:44:07,080 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:625) - Removed 0 Volatile Job(s).
+2004-10-20 11:44:07,260 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:663) - Freed 0 triggers from 'acquired' / 'blocked' state.
+2004-10-20 11:44:07,260 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:663) - Freed 0 triggers from 'acquired' / 'blocked' state.
+2004-10-20 11:44:07,451 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:676) - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2004-10-20 11:44:07,451 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:676) - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2004-10-20 11:44:07,451 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:690) - Recovery complete.
+2004-10-20 11:44:07,451 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:690) - Recovery complete.
+2004-10-20 11:44:07,471 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:696) - Removed 0 'complete' triggers.
+2004-10-20 11:44:07,471 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:696) - Removed 0 'complete' triggers.
+2004-10-20 11:44:07,521 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:702) - Removed 0 stale fired job entries.
+2004-10-20 11:44:07,521 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:702) - Removed 0 stale fired job entries.
+2004-10-20 11:44:07,591 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreTX (JobStoreTX.java:76) - JobStoreTX initialized.
+2004-10-20 11:44:07,591 INFO  [http-8080-Processor8] jdbcjobstore.JobStoreTX (JobStoreTX.java:76) - JobStoreTX initialized.
+2004-10-20 11:44:07,591 INFO  [http-8080-Processor8] impl.StdSchedulerFactory (StdSchedulerFactory.java:892) - Quartz scheduler 'bfSched' initialized from specified file: 'E:\Brainfuse\conf\bf_quartz.properties'
+2004-10-20 11:44:07,591 INFO  [http-8080-Processor8] impl.StdSchedulerFactory (StdSchedulerFactory.java:892) - Quartz scheduler 'bfSched' initialized from specified file: 'E:\Brainfuse\conf\bf_quartz.properties'
+2004-10-20 11:44:07,591 INFO  [http-8080-Processor8] impl.StdSchedulerFactory (StdSchedulerFactory.java:896) - Quartz scheduler version: 1.4.2
+2004-10-20 11:44:07,591 INFO  [http-8080-Processor8] impl.StdSchedulerFactory (StdSchedulerFactory.java:896) - Quartz scheduler version: 1.4.2
+2004-10-20 11:44:07,621 INFO  [http-8080-Processor8] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:362) - Parsing XML file: quartz_jobs2.xml with systemId: null validating: false validating schema: null
+2004-10-20 11:44:07,621 INFO  [http-8080-Processor8] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:362) - Parsing XML file: quartz_jobs2.xml with systemId: null validating: false validating schema: null
+2004-10-20 11:44:12,758 INFO  [http-8080-Processor8] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:409) - Scheduling 4 parsed jobs.
+2004-10-20 11:44:12,758 INFO  [http-8080-Processor8] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:409) - Scheduling 4 parsed jobs.
+2004-10-20 11:44:13,700 INFO  [http-8080-Processor8] core.QuartzScheduler (QuartzScheduler.java:370) - Scheduler bfSched_$_1 started.
+2004-10-20 11:44:13,700 INFO  [http-8080-Processor8] core.QuartzScheduler (QuartzScheduler.java:370) - Scheduler bfSched_$_1 started.
+2004-10-20 11:46:41,352 INFO  [main] config.DefaultConfiguration (DefaultConfiguration.java:89) - Loading global messages from ApplicationResources
+2004-10-20 11:46:41,362 INFO  [main] velocity.VelocityManager (VelocityManager.java:220) - Initializing velocity using 'velocity.properties'
+2004-10-20 11:46:41,642 INFO  [main] velocity.VelocityManager (VelocityManager.java:220) - Initializing velocity using 'velocity.properties'
+2004-10-20 11:46:41,833 INFO  [main] xml.JobInitializationPlugin (JobInitializationPlugin.java:249) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:46:41,833 INFO  [main] xml.JobInitializationPlugin (JobInitializationPlugin.java:249) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:46:41,843 INFO  [main] management.ShutdownHookPlugin (ShutdownHookPlugin.java:131) - Registering Quartz shutdown hook.
+2004-10-20 11:46:41,843 INFO  [main] management.ShutdownHookPlugin (ShutdownHookPlugin.java:131) - Registering Quartz shutdown hook.
+2004-10-20 11:46:41,843 INFO  [main] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:487) - Using thread monitor-based data access locking (synchronization).
+2004-10-20 11:46:41,843 INFO  [main] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:487) - Using thread monitor-based data access locking (synchronization).
+2004-10-20 11:46:42,193 INFO  [main] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:617) - Removed 0 Volatile Trigger(s).
+2004-10-20 11:46:42,193 INFO  [main] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:617) - Removed 0 Volatile Trigger(s).
+2004-10-20 11:46:42,203 INFO  [main] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:625) - Removed 0 Volatile Job(s).
+2004-10-20 11:46:42,203 INFO  [main] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:625) - Removed 0 Volatile Job(s).
+2004-10-20 11:46:42,393 INFO  [main] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:663) - Freed 0 triggers from 'acquired' / 'blocked' state.
+2004-10-20 11:46:42,393 INFO  [main] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:663) - Freed 0 triggers from 'acquired' / 'blocked' state.
+2004-10-20 11:46:42,484 INFO  [main] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:733) - Handling 1 triggers that missed their scheduled fire-time.
+2004-10-20 11:46:42,484 INFO  [main] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:733) - Handling 1 triggers that missed their scheduled fire-time.
+2004-10-20 11:46:43,105 INFO  [main] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:676) - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2004-10-20 11:46:43,105 INFO  [main] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:676) - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2004-10-20 11:46:43,105 INFO  [main] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:690) - Recovery complete.
+2004-10-20 11:46:43,105 INFO  [main] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:690) - Recovery complete.
+2004-10-20 11:46:43,135 INFO  [main] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:696) - Removed 0 'complete' triggers.
+2004-10-20 11:46:43,135 INFO  [main] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:696) - Removed 0 'complete' triggers.
+2004-10-20 11:46:43,195 INFO  [main] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:702) - Removed 0 stale fired job entries.
+2004-10-20 11:46:43,195 INFO  [main] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:702) - Removed 0 stale fired job entries.
+2004-10-20 11:46:43,355 INFO  [main] jdbcjobstore.JobStoreTX (JobStoreTX.java:76) - JobStoreTX initialized.
+2004-10-20 11:46:43,355 INFO  [main] jdbcjobstore.JobStoreTX (JobStoreTX.java:76) - JobStoreTX initialized.
+2004-10-20 11:46:43,365 INFO  [main] impl.StdSchedulerFactory (StdSchedulerFactory.java:892) - Quartz scheduler 'bfSched' initialized from specified file: 'E:\Brainfuse\conf\bf_quartz.properties'
+2004-10-20 11:46:43,365 INFO  [main] impl.StdSchedulerFactory (StdSchedulerFactory.java:892) - Quartz scheduler 'bfSched' initialized from specified file: 'E:\Brainfuse\conf\bf_quartz.properties'
+2004-10-20 11:46:43,365 INFO  [main] impl.StdSchedulerFactory (StdSchedulerFactory.java:896) - Quartz scheduler version: 1.4.2
+2004-10-20 11:46:43,365 INFO  [main] impl.StdSchedulerFactory (StdSchedulerFactory.java:896) - Quartz scheduler version: 1.4.2
+2004-10-20 11:46:43,395 INFO  [main] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:362) - Parsing XML file: quartz_jobs2.xml with systemId: null validating: false validating schema: null
+2004-10-20 11:46:43,395 INFO  [main] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:362) - Parsing XML file: quartz_jobs2.xml with systemId: null validating: false validating schema: null
+2004-10-20 11:46:45,308 INFO  [bfSched_Worker-2] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:46:45 10/20/2004
+2004-10-20 11:46:45,308 INFO  [bfSched_Worker-2] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:46:45 10/20/2004
+2004-10-20 11:46:46,269 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:46:46 10/20/2004
+2004-10-20 11:46:46,269 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:46:46 10/20/2004
+2004-10-20 11:46:48,652 INFO  [bfSched_Worker-2] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:46:48 10/20/2004 and reports: null
+2004-10-20 11:46:48,652 INFO  [bfSched_Worker-2] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:46:48 10/20/2004 and reports: null
+2004-10-20 11:46:48,652 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:46:48 10/20/2004 and reports: null
+2004-10-20 11:46:48,652 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:46:48 10/20/2004 and reports: null
+2004-10-20 11:46:50,425 INFO  [main] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:409) - Scheduling 4 parsed jobs.
+2004-10-20 11:46:50,425 INFO  [main] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:409) - Scheduling 4 parsed jobs.
+2004-10-20 11:46:52,158 INFO  [main] core.QuartzScheduler (QuartzScheduler.java:370) - Scheduler bfSched_$_1 started.
+2004-10-20 11:46:52,158 INFO  [main] core.QuartzScheduler (QuartzScheduler.java:370) - Scheduler bfSched_$_1 started.
+2004-10-20 11:47:43,441 INFO  [QuartzScheduler_bfSched-1_MisfireHandler] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:733) - Handling 1 triggers that missed their scheduled fire-time.
+2004-10-20 11:47:43,441 INFO  [QuartzScheduler_bfSched-1_MisfireHandler] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:733) - Handling 1 triggers that missed their scheduled fire-time.
+2004-10-20 11:47:44,623 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:47:44 10/20/2004
+2004-10-20 11:47:44,623 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:47:44 10/20/2004
+2004-10-20 11:47:44,633 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:47:44 10/20/2004 and reports: null
+2004-10-20 11:47:44,633 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:47:44 10/20/2004 and reports: null
+2004-10-20 11:47:45,955 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:47:45 10/20/2004
+2004-10-20 11:47:45,955 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:47:45 10/20/2004
+2004-10-20 11:49:32,929 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:49:32 10/20/2004 and reports: null
+2004-10-20 11:49:32,929 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:49:32 10/20/2004 and reports: null
+2004-10-20 11:51:45,850 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] config.DefaultConfiguration (DefaultConfiguration.java:89) - Loading global messages from ApplicationResources
+2004-10-20 11:51:45,870 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] velocity.VelocityManager (VelocityManager.java:220) - Initializing velocity using 'velocity.properties'
+2004-10-20 11:51:46,110 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] velocity.VelocityManager (VelocityManager.java:220) - Initializing velocity using 'velocity.properties'
+2004-10-20 11:51:46,300 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] xml.JobInitializationPlugin (JobInitializationPlugin.java:249) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:51:46,300 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] xml.JobInitializationPlugin (JobInitializationPlugin.java:249) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:51:46,300 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] management.ShutdownHookPlugin (ShutdownHookPlugin.java:131) - Registering Quartz shutdown hook.
+2004-10-20 11:51:46,300 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] management.ShutdownHookPlugin (ShutdownHookPlugin.java:131) - Registering Quartz shutdown hook.
+2004-10-20 11:51:46,300 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:487) - Using thread monitor-based data access locking (synchronization).
+2004-10-20 11:51:46,300 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:487) - Using thread monitor-based data access locking (synchronization).
+2004-10-20 11:51:46,611 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:617) - Removed 0 Volatile Trigger(s).
+2004-10-20 11:51:46,611 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:617) - Removed 0 Volatile Trigger(s).
+2004-10-20 11:51:46,621 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:625) - Removed 0 Volatile Job(s).
+2004-10-20 11:51:46,621 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:625) - Removed 0 Volatile Job(s).
+2004-10-20 11:51:46,801 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:663) - Freed 0 triggers from 'acquired' / 'blocked' state.
+2004-10-20 11:51:46,801 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:663) - Freed 0 triggers from 'acquired' / 'blocked' state.
+2004-10-20 11:51:46,981 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:676) - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2004-10-20 11:51:46,981 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:676) - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2004-10-20 11:51:46,991 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:690) - Recovery complete.
+2004-10-20 11:51:46,991 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:690) - Recovery complete.
+2004-10-20 11:51:47,012 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:696) - Removed 0 'complete' triggers.
+2004-10-20 11:51:47,012 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:696) - Removed 0 'complete' triggers.
+2004-10-20 11:51:47,052 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:702) - Removed 0 stale fired job entries.
+2004-10-20 11:51:47,052 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:702) - Removed 0 stale fired job entries.
+2004-10-20 11:51:47,122 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreTX (JobStoreTX.java:76) - JobStoreTX initialized.
+2004-10-20 11:51:47,122 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreTX (JobStoreTX.java:76) - JobStoreTX initialized.
+2004-10-20 11:51:47,122 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] impl.StdSchedulerFactory (StdSchedulerFactory.java:892) - Quartz scheduler 'bfSched' initialized from specified file: 'E:\Brainfuse\conf\bf_quartz.properties'
+2004-10-20 11:51:47,122 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] impl.StdSchedulerFactory (StdSchedulerFactory.java:892) - Quartz scheduler 'bfSched' initialized from specified file: 'E:\Brainfuse\conf\bf_quartz.properties'
+2004-10-20 11:51:47,122 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] impl.StdSchedulerFactory (StdSchedulerFactory.java:896) - Quartz scheduler version: 1.4.2
+2004-10-20 11:51:47,122 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] impl.StdSchedulerFactory (StdSchedulerFactory.java:896) - Quartz scheduler version: 1.4.2
+2004-10-20 11:51:47,142 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:362) - Parsing XML file: quartz_jobs2.xml with systemId: null validating: false validating schema: null
+2004-10-20 11:51:47,142 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:362) - Parsing XML file: quartz_jobs2.xml with systemId: null validating: false validating schema: null
+2004-10-20 11:51:51,969 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:409) - Scheduling 4 parsed jobs.
+2004-10-20 11:51:51,969 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:409) - Scheduling 4 parsed jobs.
+2004-10-20 11:51:52,580 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] core.QuartzScheduler (QuartzScheduler.java:370) - Scheduler bfSched_$_1 started.
+2004-10-20 11:51:52,580 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] core.QuartzScheduler (QuartzScheduler.java:370) - Scheduler bfSched_$_1 started.
+2004-10-20 11:52:21,431 INFO  [http-8080-Processor2] schedule.ScheduleControler (ScheduleControler.java:41) - command is = 
+2004-10-20 11:52:44,614 ERROR [http-8080-Processor3] dispatcher.ServletDispatcher (ServletDispatcher.java:283) - Could not execute action
+javax.servlet.ServletException: 
+
+You appear to have an INCOMPATIBLE VERSION of the Commons Lang library.  
+Displaytag requires version 2 of this library, and you appear to have a prior version in 
+your classpath.  You must remove this prior version AND ensure that ONLY version 2 is in 
+your classpath.
+ If commons-lang-1.x is in your classpath, be sure to remove it. 
+Be sure to delete all cached or temporary jar files from your application server; Tomcat 
+users should be sure to also check the CATALINA_HOME/shared folder; you may need to 
+restart the server. 
+commons-lang-2.jar is available in the displaytag distribution, or from the Jakarta 
+website at http://jakarta.apache.org/commons 
+
+.
+	at org.apache.jasper.runtime.PageContextImpl.doHandlePageException(PageContextImpl.java:825)
+	at org.apache.jasper.runtime.PageContextImpl.handlePageException(PageContextImpl.java:758)
+	at org.apache.jsp.WEB_002dINF.jsp.listAllJobs_jsp._jspService(listAllJobs_jsp.java:162)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:94)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:298)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:292)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:236)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:703)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:463)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:398)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at com.opensymphony.webwork.dispatcher.ServletDispatcherResult.doExecute(ServletDispatcherResult.java:80)
+	at com.opensymphony.webwork.dispatcher.WebWorkResultSupport.execute(WebWorkResultSupport.java:115)
+	at com.opensymphony.xwork.DefaultActionInvocation.executeResult(DefaultActionInvocation.java:263)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:187)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.DefaultActionProxy.execute(DefaultActionProxy.java:115)
+	at com.opensymphony.webwork.dispatcher.ServletDispatcher.serviceAction(ServletDispatcher.java:278)
+	at com.opensymphony.webwork.dispatcher.ServletDispatcher.service(ServletDispatcher.java:248)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at com.opensymphony.webwork.lifecycle.RequestLifecycleFilter.doFilter(RequestLifecycleFilter.java:75)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.parsePage(PageFilter.java:142)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.doFilter(PageFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at org.securityfilter.filter.SecurityFilter.doFilter(SecurityFilter.java:188)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:214)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardContextValve.invokeInternal(StandardContextValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:152)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:929)
+	at org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:793)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:702)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:571)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:644)
+	at java.lang.Thread.run(Thread.java:534)
+2004-10-20 11:52:47,188 INFO  [QuartzScheduler_bfSched-1_MisfireHandler] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:733) - Handling 1 triggers that missed their scheduled fire-time.
+2004-10-20 11:52:47,188 INFO  [QuartzScheduler_bfSched-1_MisfireHandler] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:733) - Handling 1 triggers that missed their scheduled fire-time.
+2004-10-20 11:52:49,511 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:52:49 10/20/2004
+2004-10-20 11:52:49,511 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:52:49 10/20/2004
+2004-10-20 11:52:50,303 INFO  [bfSched_Worker-1] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:52:50 10/20/2004
+2004-10-20 11:52:50,303 INFO  [bfSched_Worker-1] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:52:50 10/20/2004
+2004-10-20 11:54:33,421 INFO  [http-8080-Processor3] config.DefaultConfiguration (DefaultConfiguration.java:89) - Loading global messages from ApplicationResources
+2004-10-20 11:54:33,441 INFO  [http-8080-Processor3] velocity.VelocityManager (VelocityManager.java:220) - Initializing velocity using 'velocity.properties'
+2004-10-20 11:54:33,691 INFO  [http-8080-Processor3] velocity.VelocityManager (VelocityManager.java:220) - Initializing velocity using 'velocity.properties'
+2004-10-20 11:54:33,881 INFO  [http-8080-Processor3] xml.JobInitializationPlugin (JobInitializationPlugin.java:249) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:54:33,881 INFO  [http-8080-Processor3] xml.JobInitializationPlugin (JobInitializationPlugin.java:249) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:54:33,891 INFO  [http-8080-Processor3] management.ShutdownHookPlugin (ShutdownHookPlugin.java:131) - Registering Quartz shutdown hook.
+2004-10-20 11:54:33,891 INFO  [http-8080-Processor3] management.ShutdownHookPlugin (ShutdownHookPlugin.java:131) - Registering Quartz shutdown hook.
+2004-10-20 11:54:33,891 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:487) - Using thread monitor-based data access locking (synchronization).
+2004-10-20 11:54:33,891 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:487) - Using thread monitor-based data access locking (synchronization).
+2004-10-20 11:54:34,152 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:617) - Removed 0 Volatile Trigger(s).
+2004-10-20 11:54:34,152 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:617) - Removed 0 Volatile Trigger(s).
+2004-10-20 11:54:34,152 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:625) - Removed 0 Volatile Job(s).
+2004-10-20 11:54:34,152 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:625) - Removed 0 Volatile Job(s).
+2004-10-20 11:54:34,332 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:663) - Freed 0 triggers from 'acquired' / 'blocked' state.
+2004-10-20 11:54:34,332 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:663) - Freed 0 triggers from 'acquired' / 'blocked' state.
+2004-10-20 11:54:34,512 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:676) - Recovering 2 jobs that were in-progress at the time of the last shut-down.
+2004-10-20 11:54:34,512 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:676) - Recovering 2 jobs that were in-progress at the time of the last shut-down.
+2004-10-20 11:54:35,263 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:690) - Recovery complete.
+2004-10-20 11:54:35,263 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:690) - Recovery complete.
+2004-10-20 11:54:35,634 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:696) - Removed 1 'complete' triggers.
+2004-10-20 11:54:35,634 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:696) - Removed 1 'complete' triggers.
+2004-10-20 11:54:35,694 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:702) - Removed 2 stale fired job entries.
+2004-10-20 11:54:35,694 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:702) - Removed 2 stale fired job entries.
+2004-10-20 11:54:35,954 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreTX (JobStoreTX.java:76) - JobStoreTX initialized.
+2004-10-20 11:54:35,954 INFO  [http-8080-Processor3] jdbcjobstore.JobStoreTX (JobStoreTX.java:76) - JobStoreTX initialized.
+2004-10-20 11:54:35,954 INFO  [http-8080-Processor3] impl.StdSchedulerFactory (StdSchedulerFactory.java:892) - Quartz scheduler 'bfSched' initialized from specified file: 'E:\Brainfuse\conf\bf_quartz.properties'
+2004-10-20 11:54:35,954 INFO  [http-8080-Processor3] impl.StdSchedulerFactory (StdSchedulerFactory.java:892) - Quartz scheduler 'bfSched' initialized from specified file: 'E:\Brainfuse\conf\bf_quartz.properties'
+2004-10-20 11:54:35,954 INFO  [http-8080-Processor3] impl.StdSchedulerFactory (StdSchedulerFactory.java:896) - Quartz scheduler version: 1.4.2
+2004-10-20 11:54:35,954 INFO  [http-8080-Processor3] impl.StdSchedulerFactory (StdSchedulerFactory.java:896) - Quartz scheduler version: 1.4.2
+2004-10-20 11:54:35,974 INFO  [http-8080-Processor3] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:362) - Parsing XML file: quartz_jobs2.xml with systemId: null validating: false validating schema: null
+2004-10-20 11:54:35,974 INFO  [http-8080-Processor3] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:362) - Parsing XML file: quartz_jobs2.xml with systemId: null validating: false validating schema: null
+2004-10-20 11:54:40,841 INFO  [http-8080-Processor3] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:409) - Scheduling 4 parsed jobs.
+2004-10-20 11:54:40,841 INFO  [http-8080-Processor3] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:409) - Scheduling 4 parsed jobs.
+2004-10-20 11:54:41,492 INFO  [http-8080-Processor3] core.QuartzScheduler (QuartzScheduler.java:370) - Scheduler bfSched_$_1 started.
+2004-10-20 11:54:41,492 INFO  [http-8080-Processor3] core.QuartzScheduler (QuartzScheduler.java:370) - Scheduler bfSched_$_1 started.
+2004-10-20 11:55:08,862 INFO  [http-8080-Processor4] xwork.DefaultActionInvocation (DefaultActionInvocation.java:290) - Executing action method = runNow
+2004-10-20 11:55:09,132 INFO  [http-8080-Processor4] xwork.DefaultActionInvocation (DefaultActionInvocation.java:290) - Executing action method = view
+2004-10-20 11:55:10,084 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupPayroll.jobPayroll fired (by trigger MANUAL_TRIGGER.MT_49qp2m64sec1s) at:  11:55:10 10/20/2004
+2004-10-20 11:55:10,084 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupPayroll.jobPayroll fired (by trigger MANUAL_TRIGGER.MT_49qp2m64sec1s) at:  11:55:10 10/20/2004
+2004-10-20 11:55:10,464 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupPayroll.jobPayroll execution complete at  11:55:10 10/20/2004 and reports: null
+2004-10-20 11:55:10,464 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupPayroll.jobPayroll execution complete at  11:55:10 10/20/2004 and reports: null
+2004-10-20 11:55:36,792 INFO  [QuartzScheduler_bfSched-1_MisfireHandler] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:733) - Handling 3 triggers that missed their scheduled fire-time.
+2004-10-20 11:55:36,792 INFO  [QuartzScheduler_bfSched-1_MisfireHandler] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:733) - Handling 3 triggers that missed their scheduled fire-time.
+2004-10-20 11:55:38,775 INFO  [bfSched_Worker-1] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger RECOVERING_JOBS.recover_1_1098287674512) at:  11:55:38 10/20/2004
+2004-10-20 11:55:38,775 INFO  [bfSched_Worker-1] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger RECOVERING_JOBS.recover_1_1098287674512) at:  11:55:38 10/20/2004
+2004-10-20 11:55:39,646 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger RECOVERING_JOBS.recover_1_1098287674513) at:  11:55:39 10/20/2004
+2004-10-20 11:55:39,646 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger RECOVERING_JOBS.recover_1_1098287674513) at:  11:55:39 10/20/2004
+2004-10-20 11:55:40,487 INFO  [bfSched_Worker-2] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:55:40 10/20/2004
+2004-10-20 11:55:40,487 INFO  [bfSched_Worker-2] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:55:40 10/20/2004
+2004-10-20 11:58:08,971 INFO  [http-8080-Processor8] xwork.DefaultActionInvocation (DefaultActionInvocation.java:290) - Executing action method = runNow
+2004-10-20 11:58:09,481 INFO  [http-8080-Processor8] xwork.DefaultActionInvocation (DefaultActionInvocation.java:290) - Executing action method = view
+2004-10-20 11:58:29,040 INFO  [http-8080-Processor2] config.DefaultConfiguration (DefaultConfiguration.java:89) - Loading global messages from ApplicationResources
+2004-10-20 11:58:29,050 INFO  [http-8080-Processor2] velocity.VelocityManager (VelocityManager.java:220) - Initializing velocity using 'velocity.properties'
+2004-10-20 11:58:29,300 INFO  [http-8080-Processor2] velocity.VelocityManager (VelocityManager.java:220) - Initializing velocity using 'velocity.properties'
+2004-10-20 11:58:29,490 INFO  [http-8080-Processor2] xml.JobInitializationPlugin (JobInitializationPlugin.java:249) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:58:29,490 INFO  [http-8080-Processor2] xml.JobInitializationPlugin (JobInitializationPlugin.java:249) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 11:58:29,490 INFO  [http-8080-Processor2] management.ShutdownHookPlugin (ShutdownHookPlugin.java:131) - Registering Quartz shutdown hook.
+2004-10-20 11:58:29,490 INFO  [http-8080-Processor2] management.ShutdownHookPlugin (ShutdownHookPlugin.java:131) - Registering Quartz shutdown hook.
+2004-10-20 11:58:29,490 INFO  [http-8080-Processor2] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:487) - Using thread monitor-based data access locking (synchronization).
+2004-10-20 11:58:29,490 INFO  [http-8080-Processor2] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:487) - Using thread monitor-based data access locking (synchronization).
+2004-10-20 11:58:29,881 INFO  [http-8080-Processor2] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:617) - Removed 0 Volatile Trigger(s).
+2004-10-20 11:58:29,881 INFO  [http-8080-Processor2] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:617) - Removed 0 Volatile Trigger(s).
+2004-10-20 11:58:29,881 INFO  [http-8080-Processor2] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:625) - Removed 0 Volatile Job(s).
+2004-10-20 11:58:29,881 INFO  [http-8080-Processor2] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:625) - Removed 0 Volatile Job(s).
+2004-10-20 11:58:30,081 INFO  [http-8080-Processor2] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:663) - Freed 0 triggers from 'acquired' / 'blocked' state.
+2004-10-20 11:58:30,081 INFO  [http-8080-Processor2] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:663) - Freed 0 triggers from 'acquired' / 'blocked' state.
+2004-10-20 11:58:30,271 INFO  [http-8080-Processor2] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:676) - Recovering 4 jobs that were in-progress at the time of the last shut-down.
+2004-10-20 11:58:30,271 INFO  [http-8080-Processor2] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:676) - Recovering 4 jobs that were in-progress at the time of the last shut-down.
+2004-10-20 11:58:32,154 INFO  [http-8080-Processor2] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:690) - Recovery complete.
+2004-10-20 11:58:32,154 INFO  [http-8080-Processor2] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:690) - Recovery complete.
+2004-10-20 11:58:32,965 INFO  [http-8080-Processor2] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:696) - Removed 3 'complete' triggers.
+2004-10-20 11:58:32,965 INFO  [http-8080-Processor2] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:696) - Removed 3 'complete' triggers.
+2004-10-20 11:58:33,005 INFO  [http-8080-Processor2] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:702) - Removed 4 stale fired job entries.
+2004-10-20 11:58:33,005 INFO  [http-8080-Processor2] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:702) - Removed 4 stale fired job entries.
+2004-10-20 11:58:33,085 INFO  [http-8080-Processor2] jdbcjobstore.JobStoreTX (JobStoreTX.java:76) - JobStoreTX initialized.
+2004-10-20 11:58:33,085 INFO  [http-8080-Processor2] jdbcjobstore.JobStoreTX (JobStoreTX.java:76) - JobStoreTX initialized.
+2004-10-20 11:58:33,085 INFO  [http-8080-Processor2] impl.StdSchedulerFactory (StdSchedulerFactory.java:892) - Quartz scheduler 'bfSched' initialized from specified file: 'E:\Brainfuse\conf\bf_quartz.properties'
+2004-10-20 11:58:33,085 INFO  [http-8080-Processor2] impl.StdSchedulerFactory (StdSchedulerFactory.java:892) - Quartz scheduler 'bfSched' initialized from specified file: 'E:\Brainfuse\conf\bf_quartz.properties'
+2004-10-20 11:58:33,095 INFO  [http-8080-Processor2] impl.StdSchedulerFactory (StdSchedulerFactory.java:896) - Quartz scheduler version: 1.4.2
+2004-10-20 11:58:33,095 INFO  [http-8080-Processor2] impl.StdSchedulerFactory (StdSchedulerFactory.java:896) - Quartz scheduler version: 1.4.2
+2004-10-20 11:58:33,115 INFO  [http-8080-Processor2] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:362) - Parsing XML file: quartz_jobs2.xml with systemId: null validating: false validating schema: null
+2004-10-20 11:58:33,115 INFO  [http-8080-Processor2] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:362) - Parsing XML file: quartz_jobs2.xml with systemId: null validating: false validating schema: null
+2004-10-20 11:58:39,384 INFO  [http-8080-Processor2] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:409) - Scheduling 4 parsed jobs.
+2004-10-20 11:58:39,384 INFO  [http-8080-Processor2] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:409) - Scheduling 4 parsed jobs.
+2004-10-20 11:58:40,055 INFO  [http-8080-Processor2] core.QuartzScheduler (QuartzScheduler.java:370) - Scheduler bfSched_$_1 started.
+2004-10-20 11:58:40,055 INFO  [http-8080-Processor2] core.QuartzScheduler (QuartzScheduler.java:370) - Scheduler bfSched_$_1 started.
+2004-10-20 11:59:08,606 INFO  [http-8080-Processor1] xwork.DefaultActionInvocation (DefaultActionInvocation.java:290) - Executing action method = edit
+2004-10-20 11:59:33,342 INFO  [QuartzScheduler_bfSched-1_MisfireHandler] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:733) - Handling 5 triggers that missed their scheduled fire-time.
+2004-10-20 11:59:33,342 INFO  [QuartzScheduler_bfSched-1_MisfireHandler] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:733) - Handling 5 triggers that missed their scheduled fire-time.
+2004-10-20 11:59:37,248 INFO  [bfSched_Worker-2] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger RECOVERING_JOBS.recover_1_1098287910271) at:  11:59:37 10/20/2004
+2004-10-20 11:59:37,248 INFO  [bfSched_Worker-2] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger RECOVERING_JOBS.recover_1_1098287910271) at:  11:59:37 10/20/2004
+2004-10-20 11:59:37,999 INFO  [bfSched_Worker-1] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger RECOVERING_JOBS.recover_1_1098287910272) at:  11:59:37 10/20/2004
+2004-10-20 11:59:37,999 INFO  [bfSched_Worker-1] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger RECOVERING_JOBS.recover_1_1098287910272) at:  11:59:37 10/20/2004
+2004-10-20 11:59:38,940 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger RECOVERING_JOBS.recover_1_1098287910273) at:  11:59:38 10/20/2004
+2004-10-20 11:59:38,940 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger RECOVERING_JOBS.recover_1_1098287910273) at:  11:59:38 10/20/2004
+2004-10-20 11:59:46,701 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:59:46 10/20/2004 and reports: null
+2004-10-20 11:59:46,701 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:59:46 10/20/2004 and reports: null
+2004-10-20 11:59:46,801 INFO  [bfSched_Worker-2] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:59:46 10/20/2004 and reports: null
+2004-10-20 11:59:46,801 INFO  [bfSched_Worker-2] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:59:46 10/20/2004 and reports: null
+2004-10-20 11:59:46,811 INFO  [bfSched_Worker-1] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:59:46 10/20/2004 and reports: null
+2004-10-20 11:59:46,811 INFO  [bfSched_Worker-1] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:59:46 10/20/2004 and reports: null
+2004-10-20 11:59:47,512 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger RECOVERING_JOBS.recover_1_1098287910274) at:  11:59:47 10/20/2004
+2004-10-20 11:59:47,512 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger RECOVERING_JOBS.recover_1_1098287910274) at:  11:59:47 10/20/2004
+2004-10-20 11:59:48,294 INFO  [bfSched_Worker-2] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:59:48 10/20/2004
+2004-10-20 11:59:48,294 INFO  [bfSched_Worker-2] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:59:48 10/20/2004
+2004-10-20 11:59:48,844 INFO  [http-8080-Processor2] xwork.DefaultActionInvocation (DefaultActionInvocation.java:290) - Executing action method = view
+2004-10-20 11:59:49,796 WARN  [http-8080-Processor2] web.Util (Util.java:195) - The trigger recover_1_1098287910272 in group RECOVERING_JOBS was null
+2004-10-20 11:59:49,796 WARN  [http-8080-Processor2] web.Util (Util.java:195) - The trigger recover_1_1098287910272 in group RECOVERING_JOBS was null
+2004-10-20 11:59:51,108 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:59:51 10/20/2004 and reports: null
+2004-10-20 11:59:51,108 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:59:51 10/20/2004 and reports: null
+2004-10-20 11:59:51,298 INFO  [bfSched_Worker-1] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:59:51 10/20/2004
+2004-10-20 11:59:51,298 INFO  [bfSched_Worker-1] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:59:51 10/20/2004
+2004-10-20 11:59:52,610 INFO  [bfSched_Worker-2] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:59:52 10/20/2004 and reports: null
+2004-10-20 11:59:52,610 INFO  [bfSched_Worker-2] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:59:52 10/20/2004 and reports: null
+2004-10-20 11:59:53,982 INFO  [bfSched_Worker-1] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:59:53 10/20/2004 and reports: null
+2004-10-20 11:59:53,982 INFO  [bfSched_Worker-1] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:59:53 10/20/2004 and reports: null
+2004-10-20 12:00:01,132 INFO  [http-8080-Processor1] schedule.ScheduleControler (ScheduleControler.java:41) - command is = 
+2004-10-20 12:00:03,495 INFO  [http-8080-Processor1] schedule.ScheduleControler (ScheduleControler.java:41) - command is = 
+2004-10-20 12:00:05,588 INFO  [http-8080-Processor1] schedule.ScheduleControler (ScheduleControler.java:41) - command is = 
+2004-10-20 12:28:35,537 INFO  [http-8080-Processor4] xwork.DefaultActionInvocation (DefaultActionInvocation.java:290) - Executing action method = runNow
+2004-10-20 12:28:35,808 ERROR [http-8080-Processor4] job.SimpleJobActions (SimpleJobActions.java:41) - error executing job
+org.quartz.JobPersistenceException: Couldn't store trigger: The job (groupTimeSheetOnce.jobTimeSheetOnce) referenced by the trigger does not exist. [See nested exception: org.quartz.JobPersistenceException: The job (groupTimeSheetOnce.jobTimeSheetOnce) referenced by the trigger does not exist.]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.storeTrigger(JobStoreSupport.java:947)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.storeTrigger(JobStoreTX.java:319)
+	at org.quartz.core.QuartzScheduler.triggerJob(QuartzScheduler.java:759)
+	at org.quartz.impl.StdScheduler.triggerJob(StdScheduler.java:292)
+	at org.quartz.ui.web.action.job.SimpleJobActions.runNow(SimpleJobActions.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.opensymphony.xwork.DefaultActionInvocation.invokeAction(DefaultActionInvocation.java:303)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:170)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.DefaultActionProxy.execute(DefaultActionProxy.java:115)
+	at com.opensymphony.webwork.dispatcher.ServletDispatcher.serviceAction(ServletDispatcher.java:278)
+	at com.opensymphony.webwork.dispatcher.ServletDispatcher.service(ServletDispatcher.java:248)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at com.opensymphony.webwork.lifecycle.RequestLifecycleFilter.doFilter(RequestLifecycleFilter.java:75)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.parsePage(PageFilter.java:142)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.doFilter(PageFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at org.securityfilter.filter.SecurityFilter.doFilter(SecurityFilter.java:188)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:214)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardContextValve.invokeInternal(StandardContextValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:152)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:929)
+	at org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:793)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:702)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:571)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:644)
+	at java.lang.Thread.run(Thread.java:534)
+* Nested Exception (Underlying Cause) ---------------
+org.quartz.JobPersistenceException: The job (groupTimeSheetOnce.jobTimeSheetOnce) referenced by the trigger does not exist.
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.storeTrigger(JobStoreSupport.java:909)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.storeTrigger(JobStoreTX.java:319)
+	at org.quartz.core.QuartzScheduler.triggerJob(QuartzScheduler.java:759)
+	at org.quartz.impl.StdScheduler.triggerJob(StdScheduler.java:292)
+	at org.quartz.ui.web.action.job.SimpleJobActions.runNow(SimpleJobActions.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.opensymphony.xwork.DefaultActionInvocation.invokeAction(DefaultActionInvocation.java:303)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:170)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+	at com.opensymphony.xwork.DefaultActionProxy.execute(DefaultActionProxy.java:115)
+	at com.opensymphony.webwork.dispatcher.ServletDispatcher.serviceAction(ServletDispatcher.java:278)
+	at com.opensymphony.webwork.dispatcher.ServletDispatcher.service(ServletDispatcher.java:248)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at com.opensymphony.webwork.lifecycle.RequestLifecycleFilter.doFilter(RequestLifecycleFilter.java:75)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.parsePage(PageFilter.java:142)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.doFilter(PageFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at org.securityfilter.filter.SecurityFilter.doFilter(SecurityFilter.java:188)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:214)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardContextValve.invokeInternal(StandardContextValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:152)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:929)
+	at org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:793)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:702)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:571)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:644)
+	at java.lang.Thread.run(Thread.java:534)
+2004-10-20 12:29:06,992 INFO  [http-8080-Processor8] xwork.DefaultActionInvocation (DefaultActionInvocation.java:290) - Executing action method = runNow
+2004-10-20 12:29:07,493 INFO  [http-8080-Processor8] xwork.DefaultActionInvocation (DefaultActionInvocation.java:290) - Executing action method = view
+2004-10-20 12:29:08,505 INFO  [bfSched_Worker-2] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheet.jobTimeSheet fired (by trigger MANUAL_TRIGGER.MT_1q6560emcl5aw) at:  12:29:08 10/20/2004
+2004-10-20 12:29:08,505 INFO  [bfSched_Worker-2] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheet.jobTimeSheet fired (by trigger MANUAL_TRIGGER.MT_1q6560emcl5aw) at:  12:29:08 10/20/2004
+2004-10-20 12:29:10,457 INFO  [bfSched_Worker-2] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupTimeSheet.jobTimeSheet execution complete at  12:29:10 10/20/2004 and reports: null
+2004-10-20 12:29:10,457 INFO  [bfSched_Worker-2] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupTimeSheet.jobTimeSheet execution complete at  12:29:10 10/20/2004 and reports: null
+2004-10-20 12:30:26,557 INFO  [http-8080-Processor3] xwork.DefaultActionInvocation (DefaultActionInvocation.java:290) - Executing action method = runNow
+2004-10-20 12:30:27,658 INFO  [http-8080-Processor3] xwork.DefaultActionInvocation (DefaultActionInvocation.java:290) - Executing action method = view
+2004-10-20 12:30:29,301 INFO  [bfSched_Worker-2] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupPayroll.jobPayroll fired (by trigger MANUAL_TRIGGER.MT_ef24jo5hnrt2o) at:  12:30:29 10/20/2004
+2004-10-20 12:30:29,301 INFO  [bfSched_Worker-2] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupPayroll.jobPayroll fired (by trigger MANUAL_TRIGGER.MT_ef24jo5hnrt2o) at:  12:30:29 10/20/2004
+2004-10-20 12:30:29,461 INFO  [bfSched_Worker-2] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupPayroll.jobPayroll execution complete at  12:30:29 10/20/2004 and reports: null
+2004-10-20 12:30:29,461 INFO  [bfSched_Worker-2] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupPayroll.jobPayroll execution complete at  12:30:29 10/20/2004 and reports: null
+2004-10-20 12:30:36,151 INFO  [http-8080-Processor3] xwork.DefaultActionInvocation (DefaultActionInvocation.java:290) - Executing action method = start
+2004-10-20 12:30:52,124 INFO  [http-8080-Processor2] xwork.DefaultActionInvocation (DefaultActionInvocation.java:290) - Executing action method = start
+2004-10-20 12:34:02,838 INFO  [http-8080-Processor2] xwork.DefaultActionInvocation (DefaultActionInvocation.java:290) - Executing action method = logout
+2004-10-20 12:34:23,257 INFO  [http-8080-Processor3] xwork.DefaultActionInvocation (DefaultActionInvocation.java:290) - Executing action method = list
+2004-10-20 14:38:38,938 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] config.DefaultConfiguration (DefaultConfiguration.java:89) - Loading global messages from ApplicationResources
+2004-10-20 14:38:38,948 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] velocity.VelocityManager (VelocityManager.java:220) - Initializing velocity using 'velocity.properties'
+2004-10-20 14:38:39,158 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] velocity.VelocityManager (VelocityManager.java:220) - Initializing velocity using 'velocity.properties'
+2004-10-20 14:38:39,739 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] xml.JobInitializationPlugin (JobInitializationPlugin.java:249) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 14:38:39,739 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] xml.JobInitializationPlugin (JobInitializationPlugin.java:249) - Registering Quartz Job Initiazation Plug-in.
+2004-10-20 14:38:39,759 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] management.ShutdownHookPlugin (ShutdownHookPlugin.java:131) - Registering Quartz shutdown hook.
+2004-10-20 14:38:39,759 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] management.ShutdownHookPlugin (ShutdownHookPlugin.java:131) - Registering Quartz shutdown hook.
+2004-10-20 14:38:39,759 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:487) - Using thread monitor-based data access locking (synchronization).
+2004-10-20 14:38:39,759 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:487) - Using thread monitor-based data access locking (synchronization).
+2004-10-20 14:38:40,100 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:617) - Removed 0 Volatile Trigger(s).
+2004-10-20 14:38:40,100 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:617) - Removed 0 Volatile Trigger(s).
+2004-10-20 14:38:40,100 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:625) - Removed 0 Volatile Job(s).
+2004-10-20 14:38:40,100 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:625) - Removed 0 Volatile Job(s).
+2004-10-20 14:38:40,360 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:663) - Freed 0 triggers from 'acquired' / 'blocked' state.
+2004-10-20 14:38:40,360 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:663) - Freed 0 triggers from 'acquired' / 'blocked' state.
+2004-10-20 14:38:40,540 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:676) - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2004-10-20 14:38:40,540 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:676) - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2004-10-20 14:38:40,540 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:690) - Recovery complete.
+2004-10-20 14:38:40,540 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:690) - Recovery complete.
+2004-10-20 14:38:40,560 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:696) - Removed 0 'complete' triggers.
+2004-10-20 14:38:40,560 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:696) - Removed 0 'complete' triggers.
+2004-10-20 14:38:40,600 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:702) - Removed 0 stale fired job entries.
+2004-10-20 14:38:40,600 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:702) - Removed 0 stale fired job entries.
+2004-10-20 14:38:40,680 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreTX (JobStoreTX.java:76) - JobStoreTX initialized.
+2004-10-20 14:38:40,680 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] jdbcjobstore.JobStoreTX (JobStoreTX.java:76) - JobStoreTX initialized.
+2004-10-20 14:38:40,680 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] impl.StdSchedulerFactory (StdSchedulerFactory.java:892) - Quartz scheduler 'bfSched' initialized from specified file: 'E:\Brainfuse\conf\bf_quartz.properties'
+2004-10-20 14:38:40,680 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] impl.StdSchedulerFactory (StdSchedulerFactory.java:892) - Quartz scheduler 'bfSched' initialized from specified file: 'E:\Brainfuse\conf\bf_quartz.properties'
+2004-10-20 14:38:40,680 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] impl.StdSchedulerFactory (StdSchedulerFactory.java:896) - Quartz scheduler version: 1.4.2
+2004-10-20 14:38:40,680 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] impl.StdSchedulerFactory (StdSchedulerFactory.java:896) - Quartz scheduler version: 1.4.2
+2004-10-20 14:38:40,700 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:362) - Parsing XML file: quartz_jobs2.xml with systemId: null validating: false validating schema: null
+2004-10-20 14:38:40,700 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:362) - Parsing XML file: quartz_jobs2.xml with systemId: null validating: false validating schema: null
+2004-10-20 14:38:45,708 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:409) - Scheduling 4 parsed jobs.
+2004-10-20 14:38:45,708 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] xml.JobSchedulingDataProcessor (JobSchedulingDataProcessor.java:409) - Scheduling 4 parsed jobs.
+2004-10-20 14:38:46,309 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] core.QuartzScheduler (QuartzScheduler.java:370) - Scheduler bfSched_$_1 started.
+2004-10-20 14:38:46,309 INFO  [ContainerBackgroundProcessor[StandardEngine[Catalina]]] core.QuartzScheduler (QuartzScheduler.java:370) - Scheduler bfSched_$_1 started.
+2004-10-20 14:39:40,887 INFO  [QuartzScheduler_bfSched-1_MisfireHandler] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:733) - Handling 1 triggers that missed their scheduled fire-time.
+2004-10-20 14:39:40,887 INFO  [QuartzScheduler_bfSched-1_MisfireHandler] jdbcjobstore.JobStoreSupport (JobStoreSupport.java:733) - Handling 1 triggers that missed their scheduled fire-time.
+2004-10-20 14:39:43,070 INFO  [bfSched_Worker-1] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  14:39:43 10/20/2004
+2004-10-20 14:39:43,070 INFO  [bfSched_Worker-1] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  14:39:43 10/20/2004
+2004-10-20 14:39:44,102 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  14:39:44 10/20/2004
+2004-10-20 14:39:44,102 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:486) - Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  14:39:44 10/20/2004
+2004-10-20 14:39:48,127 INFO  [bfSched_Worker-1] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  14:39:48 10/20/2004 and reports: null
+2004-10-20 14:39:48,127 INFO  [bfSched_Worker-1] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  14:39:48 10/20/2004 and reports: null
+2004-10-20 14:39:48,188 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  14:39:48 10/20/2004 and reports: null
+2004-10-20 14:39:48,188 INFO  [bfSched_Worker-0] history.LoggingJobHistoryPlugin (LoggingJobHistoryPlugin.java:525) - Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  14:39:48 10/20/2004 and reports: null
