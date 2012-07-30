@@ -7,6 +7,7 @@ package com.eggtheory.brainfuse.bizobjects.billing;
  * Company:
  * @author
  * @version 1.0
+* Editing for vault2git
  */
 
 import static com.eggtheory.brainfuse.utils.resources.ResourceBundleUtils.getString;
