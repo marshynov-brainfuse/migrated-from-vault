@@ -1,0 +1,3134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Wed Oct 20 11:11:32 EDT 2004<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>4857855</td>
+<td title="http-8080-Processor4 thread">http-8080-Processor4</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.xwork.DefaultActionInvocation category">com.opensymphony.xwork.DefaultActionInvocation</td>
+<td title="Message">Executing action method = start</td>
+</tr>
+
+<tr>
+<td>5101065</td>
+<td title="http-8080-Processor1 thread">http-8080-Processor1</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.xml.JobInitializationPlugin category">org.quartz.plugins.xml.JobInitializationPlugin</td>
+<td title="Message">Registering Quartz Job Initiazation Plug-in.</td>
+</tr>
+
+<tr>
+<td>5101085</td>
+<td title="http-8080-Processor1 thread">http-8080-Processor1</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.opensymphony.webwork.dispatcher.ServletDispatcher category">com.opensymphony.webwork.dispatcher.ServletDispatcher</td>
+<td title="Message">Could not execute action</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.lang.NullPointerException
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.quartz.ui.web.action.schedule.ListJobs.execute(ListJobs.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:168)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionProxy.execute(DefaultActionProxy.java:115)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.webwork.dispatcher.ServletDispatcher.serviceAction(ServletDispatcher.java:278)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.webwork.dispatcher.ServletDispatcher.service(ServletDispatcher.java:248)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.webwork.lifecycle.RequestLifecycleFilter.doFilter(RequestLifecycleFilter.java:75)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.module.sitemesh.filter.PageFilter.parsePage(PageFilter.java:142)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.module.sitemesh.filter.PageFilter.doFilter(PageFilter.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.securityfilter.filter.SecurityFilter.doFilter(SecurityFilter.java:188)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:214)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardContextValve.invokeInternal(StandardContextValve.java:198)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:152)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:929)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:793)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:702)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:571)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:644)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.Thread.run(Thread.java:534)
+</td></tr>
+
+<tr>
+<td>5107374</td>
+<td title="http-8080-Processor4 thread">http-8080-Processor4</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.xml.JobInitializationPlugin category">org.quartz.plugins.xml.JobInitializationPlugin</td>
+<td title="Message">Registering Quartz Job Initiazation Plug-in.</td>
+</tr>
+
+<tr>
+<td>5107384</td>
+<td title="http-8080-Processor4 thread">http-8080-Processor4</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.opensymphony.webwork.dispatcher.ServletDispatcher category">com.opensymphony.webwork.dispatcher.ServletDispatcher</td>
+<td title="Message">Could not execute action</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.lang.NullPointerException
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.quartz.ui.web.action.schedule.ListJobs.execute(ListJobs.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:168)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionProxy.execute(DefaultActionProxy.java:115)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.webwork.dispatcher.ServletDispatcher.serviceAction(ServletDispatcher.java:278)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.webwork.dispatcher.ServletDispatcher.service(ServletDispatcher.java:248)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.webwork.lifecycle.RequestLifecycleFilter.doFilter(RequestLifecycleFilter.java:75)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.module.sitemesh.filter.PageFilter.parsePage(PageFilter.java:142)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.module.sitemesh.filter.PageFilter.doFilter(PageFilter.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.securityfilter.filter.SecurityFilter.doFilter(SecurityFilter.java:188)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:214)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardContextValve.invokeInternal(StandardContextValve.java:198)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:152)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:929)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:793)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:702)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:571)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:644)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.Thread.run(Thread.java:534)
+</td></tr>
+
+<tr>
+<td>5107654</td>
+<td title="http-8080-Processor1 thread">http-8080-Processor1</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.xml.JobInitializationPlugin category">org.quartz.plugins.xml.JobInitializationPlugin</td>
+<td title="Message">Registering Quartz Job Initiazation Plug-in.</td>
+</tr>
+
+<tr>
+<td>5107654</td>
+<td title="http-8080-Processor1 thread">http-8080-Processor1</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.opensymphony.webwork.dispatcher.ServletDispatcher category">com.opensymphony.webwork.dispatcher.ServletDispatcher</td>
+<td title="Message">Could not execute action</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.lang.NullPointerException
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.quartz.ui.web.action.schedule.ListJobs.execute(ListJobs.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:168)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionProxy.execute(DefaultActionProxy.java:115)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.webwork.dispatcher.ServletDispatcher.serviceAction(ServletDispatcher.java:278)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.webwork.dispatcher.ServletDispatcher.service(ServletDispatcher.java:248)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.webwork.lifecycle.RequestLifecycleFilter.doFilter(RequestLifecycleFilter.java:75)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.module.sitemesh.filter.PageFilter.parsePage(PageFilter.java:142)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.module.sitemesh.filter.PageFilter.doFilter(PageFilter.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.securityfilter.filter.SecurityFilter.doFilter(SecurityFilter.java:188)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:214)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardContextValve.invokeInternal(StandardContextValve.java:198)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:152)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:929)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:793)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:702)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:571)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:644)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.Thread.run(Thread.java:534)
+</td></tr>
+
+<tr>
+<td>5107904</td>
+<td title="http-8080-Processor4 thread">http-8080-Processor4</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.xml.JobInitializationPlugin category">org.quartz.plugins.xml.JobInitializationPlugin</td>
+<td title="Message">Registering Quartz Job Initiazation Plug-in.</td>
+</tr>
+
+<tr>
+<td>5107904</td>
+<td title="http-8080-Processor4 thread">http-8080-Processor4</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.opensymphony.webwork.dispatcher.ServletDispatcher category">com.opensymphony.webwork.dispatcher.ServletDispatcher</td>
+<td title="Message">Could not execute action</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.lang.NullPointerException
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.quartz.ui.web.action.schedule.ListJobs.execute(ListJobs.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:168)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionProxy.execute(DefaultActionProxy.java:115)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.webwork.dispatcher.ServletDispatcher.serviceAction(ServletDispatcher.java:278)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.webwork.dispatcher.ServletDispatcher.service(ServletDispatcher.java:248)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.webwork.lifecycle.RequestLifecycleFilter.doFilter(RequestLifecycleFilter.java:75)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.module.sitemesh.filter.PageFilter.parsePage(PageFilter.java:142)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.module.sitemesh.filter.PageFilter.doFilter(PageFilter.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.securityfilter.filter.SecurityFilter.doFilter(SecurityFilter.java:188)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:214)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardContextValve.invokeInternal(StandardContextValve.java:198)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:152)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:929)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:793)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:702)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:571)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:644)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.Thread.run(Thread.java:534)
+</td></tr>
+
+<tr>
+<td>5108125</td>
+<td title="http-8080-Processor1 thread">http-8080-Processor1</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.xml.JobInitializationPlugin category">org.quartz.plugins.xml.JobInitializationPlugin</td>
+<td title="Message">Registering Quartz Job Initiazation Plug-in.</td>
+</tr>
+
+<tr>
+<td>5108125</td>
+<td title="http-8080-Processor1 thread">http-8080-Processor1</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.opensymphony.webwork.dispatcher.ServletDispatcher category">com.opensymphony.webwork.dispatcher.ServletDispatcher</td>
+<td title="Message">Could not execute action</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.lang.NullPointerException
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.quartz.ui.web.action.schedule.ListJobs.execute(ListJobs.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:168)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionProxy.execute(DefaultActionProxy.java:115)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.webwork.dispatcher.ServletDispatcher.serviceAction(ServletDispatcher.java:278)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.webwork.dispatcher.ServletDispatcher.service(ServletDispatcher.java:248)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.webwork.lifecycle.RequestLifecycleFilter.doFilter(RequestLifecycleFilter.java:75)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.module.sitemesh.filter.PageFilter.parsePage(PageFilter.java:142)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.module.sitemesh.filter.PageFilter.doFilter(PageFilter.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.securityfilter.filter.SecurityFilter.doFilter(SecurityFilter.java:188)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:214)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardContextValve.invokeInternal(StandardContextValve.java:198)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:152)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:929)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:793)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:702)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:571)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:644)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.Thread.run(Thread.java:534)
+</td></tr>
+
+<tr>
+<td>5110819</td>
+<td title="http-8080-Processor4 thread">http-8080-Processor4</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.xml.JobInitializationPlugin category">org.quartz.plugins.xml.JobInitializationPlugin</td>
+<td title="Message">Registering Quartz Job Initiazation Plug-in.</td>
+</tr>
+
+<tr>
+<td>5110819</td>
+<td title="http-8080-Processor4 thread">http-8080-Processor4</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.opensymphony.webwork.dispatcher.ServletDispatcher category">com.opensymphony.webwork.dispatcher.ServletDispatcher</td>
+<td title="Message">Could not execute action</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.lang.NullPointerException
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.quartz.ui.web.action.schedule.ListTriggers.execute(ListTriggers.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:168)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionProxy.execute(DefaultActionProxy.java:115)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.webwork.dispatcher.ServletDispatcher.serviceAction(ServletDispatcher.java:278)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.webwork.dispatcher.ServletDispatcher.service(ServletDispatcher.java:248)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.webwork.lifecycle.RequestLifecycleFilter.doFilter(RequestLifecycleFilter.java:75)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.module.sitemesh.filter.PageFilter.parsePage(PageFilter.java:142)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.module.sitemesh.filter.PageFilter.doFilter(PageFilter.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.securityfilter.filter.SecurityFilter.doFilter(SecurityFilter.java:188)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:214)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardContextValve.invokeInternal(StandardContextValve.java:198)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:152)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:929)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:793)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:702)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:571)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:644)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.Thread.run(Thread.java:534)
+</td></tr>
+
+<tr>
+<td>5111920</td>
+<td title="http-8080-Processor1 thread">http-8080-Processor1</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.xml.JobInitializationPlugin category">org.quartz.plugins.xml.JobInitializationPlugin</td>
+<td title="Message">Registering Quartz Job Initiazation Plug-in.</td>
+</tr>
+
+<tr>
+<td>5111920</td>
+<td title="http-8080-Processor1 thread">http-8080-Processor1</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.opensymphony.webwork.dispatcher.ServletDispatcher category">com.opensymphony.webwork.dispatcher.ServletDispatcher</td>
+<td title="Message">Could not execute action</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.lang.NullPointerException
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.quartz.ui.web.action.schedule.ListTriggers.execute(ListTriggers.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:168)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionProxy.execute(DefaultActionProxy.java:115)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.webwork.dispatcher.ServletDispatcher.serviceAction(ServletDispatcher.java:278)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.webwork.dispatcher.ServletDispatcher.service(ServletDispatcher.java:248)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.webwork.lifecycle.RequestLifecycleFilter.doFilter(RequestLifecycleFilter.java:75)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.module.sitemesh.filter.PageFilter.parsePage(PageFilter.java:142)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.module.sitemesh.filter.PageFilter.doFilter(PageFilter.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.securityfilter.filter.SecurityFilter.doFilter(SecurityFilter.java:188)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:214)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardContextValve.invokeInternal(StandardContextValve.java:198)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:152)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:929)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:793)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:702)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:571)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:644)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.Thread.run(Thread.java:534)
+</td></tr>
+
+<tr>
+<td>5128224</td>
+<td title="http-8080-Processor1 thread">http-8080-Processor1</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.xwork.DefaultActionInvocation category">com.opensymphony.xwork.DefaultActionInvocation</td>
+<td title="Message">Executing action method = list</td>
+</tr>
+
+<tr>
+<td>5134943</td>
+<td title="http-8080-Processor1 thread">http-8080-Processor1</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.xwork.ActionSupport category">com.opensymphony.xwork.ActionSupport</td>
+<td title="Message">command is = </td>
+</tr>
+
+<tr>
+<td>5134953</td>
+<td title="http-8080-Processor1 thread">http-8080-Processor1</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.xml.JobInitializationPlugin category">org.quartz.plugins.xml.JobInitializationPlugin</td>
+<td title="Message">Registering Quartz Job Initiazation Plug-in.</td>
+</tr>
+</table>
+<br>
+</body></html><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Wed Oct 20 11:33:35 EDT 2004<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="http-8080-Processor2 thread">http-8080-Processor2</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.webwork.config.DefaultConfiguration category">com.opensymphony.webwork.config.DefaultConfiguration</td>
+<td title="Message">Loading global messages from ApplicationResources</td>
+</tr>
+
+<tr>
+<td>20</td>
+<td title="http-8080-Processor2 thread">http-8080-Processor2</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.webwork.views.velocity.VelocityManager category">com.opensymphony.webwork.views.velocity.VelocityManager</td>
+<td title="Message">Initializing velocity using 'velocity.properties'</td>
+</tr>
+
+<tr>
+<td>271</td>
+<td title="http-8080-Processor2 thread">http-8080-Processor2</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.webwork.views.velocity.VelocityManager category">com.opensymphony.webwork.views.velocity.VelocityManager</td>
+<td title="Message">Initializing velocity using 'velocity.properties'</td>
+</tr>
+
+<tr>
+<td>431</td>
+<td title="http-8080-Processor2 thread">http-8080-Processor2</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.xml.JobInitializationPlugin category">org.quartz.plugins.xml.JobInitializationPlugin</td>
+<td title="Message">Registering Quartz Job Initiazation Plug-in.</td>
+</tr>
+
+<tr>
+<td>441</td>
+<td title="http-8080-Processor2 thread">http-8080-Processor2</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.management.ShutdownHookPlugin category">org.quartz.plugins.management.ShutdownHookPlugin</td>
+<td title="Message">Registering Quartz shutdown hook.</td>
+</tr>
+
+<tr>
+<td>441</td>
+<td title="http-8080-Processor2 thread">http-8080-Processor2</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Using thread monitor-based data access locking (synchronization).</td>
+</tr>
+
+<tr>
+<td>18377</td>
+<td title="http-8080-Processor2 thread">http-8080-Processor2</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.xwork.ActionSupport category">com.opensymphony.xwork.ActionSupport</td>
+<td title="Message">command is = </td>
+</tr>
+
+<tr>
+<td>18377</td>
+<td title="http-8080-Processor2 thread">http-8080-Processor2</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.xml.JobInitializationPlugin category">org.quartz.plugins.xml.JobInitializationPlugin</td>
+<td title="Message">Registering Quartz Job Initiazation Plug-in.</td>
+</tr>
+
+<tr>
+<td>18377</td>
+<td title="http-8080-Processor2 thread">http-8080-Processor2</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.management.ShutdownHookPlugin category">org.quartz.plugins.management.ShutdownHookPlugin</td>
+<td title="Message">Registering Quartz shutdown hook.</td>
+</tr>
+
+<tr>
+<td>18377</td>
+<td title="http-8080-Processor2 thread">http-8080-Processor2</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Using thread monitor-based data access locking (synchronization).</td>
+</tr>
+
+<tr>
+<td>125551</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.xwork.ActionSupport category">com.opensymphony.xwork.ActionSupport</td>
+<td title="Message">command is = </td>
+</tr>
+
+<tr>
+<td>125561</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.xml.JobInitializationPlugin category">org.quartz.plugins.xml.JobInitializationPlugin</td>
+<td title="Message">Registering Quartz Job Initiazation Plug-in.</td>
+</tr>
+
+<tr>
+<td>125561</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.management.ShutdownHookPlugin category">org.quartz.plugins.management.ShutdownHookPlugin</td>
+<td title="Message">Registering Quartz shutdown hook.</td>
+</tr>
+
+<tr>
+<td>125561</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Using thread monitor-based data access locking (synchronization).</td>
+</tr>
+
+<tr>
+<td>126242</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.xwork.ActionSupport category">com.opensymphony.xwork.ActionSupport</td>
+<td title="Message">command is = </td>
+</tr>
+
+<tr>
+<td>126242</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.xml.JobInitializationPlugin category">org.quartz.plugins.xml.JobInitializationPlugin</td>
+<td title="Message">Registering Quartz Job Initiazation Plug-in.</td>
+</tr>
+
+<tr>
+<td>126252</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.management.ShutdownHookPlugin category">org.quartz.plugins.management.ShutdownHookPlugin</td>
+<td title="Message">Registering Quartz shutdown hook.</td>
+</tr>
+
+<tr>
+<td>126252</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Using thread monitor-based data access locking (synchronization).</td>
+</tr>
+</table>
+<br>
+</body></html><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Wed Oct 20 11:35:46 EDT 2004<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.webwork.config.DefaultConfiguration category">com.opensymphony.webwork.config.DefaultConfiguration</td>
+<td title="Message">Loading global messages from ApplicationResources</td>
+</tr>
+
+<tr>
+<td>21</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.webwork.views.velocity.VelocityManager category">com.opensymphony.webwork.views.velocity.VelocityManager</td>
+<td title="Message">Initializing velocity using 'velocity.properties'</td>
+</tr>
+
+<tr>
+<td>501</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.webwork.views.velocity.VelocityManager category">com.opensymphony.webwork.views.velocity.VelocityManager</td>
+<td title="Message">Initializing velocity using 'velocity.properties'</td>
+</tr>
+
+<tr>
+<td>691</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.xml.JobInitializationPlugin category">org.quartz.plugins.xml.JobInitializationPlugin</td>
+<td title="Message">Registering Quartz Job Initiazation Plug-in.</td>
+</tr>
+
+<tr>
+<td>691</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.management.ShutdownHookPlugin category">org.quartz.plugins.management.ShutdownHookPlugin</td>
+<td title="Message">Registering Quartz shutdown hook.</td>
+</tr>
+
+<tr>
+<td>691</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Using thread monitor-based data access locking (synchronization).</td>
+</tr>
+
+<tr>
+<td>1362</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 Volatile Trigger(s).</td>
+</tr>
+
+<tr>
+<td>1362</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 Volatile Job(s).</td>
+</tr>
+
+<tr>
+<td>1603</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Freed 0 triggers from 'acquired' / 'blocked' state.</td>
+</tr>
+
+<tr>
+<td>1803</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Recovering 0 jobs that were in-progress at the time of the last shut-down.</td>
+</tr>
+
+<tr>
+<td>1803</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Recovery complete.</td>
+</tr>
+
+<tr>
+<td>1823</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 'complete' triggers.</td>
+</tr>
+
+<tr>
+<td>1863</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 stale fired job entries.</td>
+</tr>
+
+<tr>
+<td>1933</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">JobStoreTX initialized.</td>
+</tr>
+
+<tr>
+<td>1943</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.StdSchedulerFactory category">org.quartz.impl.StdSchedulerFactory</td>
+<td title="Message">Quartz scheduler 'bfSched' initialized from specified file: 'E:\Brainfuse\conf\bf_quartz.properties'</td>
+</tr>
+
+<tr>
+<td>1943</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.StdSchedulerFactory category">org.quartz.impl.StdSchedulerFactory</td>
+<td title="Message">Quartz scheduler version: 1.4.2</td>
+</tr>
+
+<tr>
+<td>1963</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.xml.JobSchedulingDataProcessor category">org.quartz.xml.JobSchedulingDataProcessor</td>
+<td title="Message">Parsing XML file: quartz_jobs2.xml with systemId: null validating: false validating schema: null</td>
+</tr>
+
+<tr>
+<td>3506</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="org.quartz.plugins.xml.JobInitializationPlugin category">org.quartz.plugins.xml.JobInitializationPlugin</td>
+<td title="Message">Error scheduling jobs: Error at (52, 52: Unparseable date: "2004-08-23"</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.apache.commons.beanutils.ConversionException: Unparseable date: "2004-08-23"
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2540)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2566)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.commons.digester.Digester.endElement(Digester.java:1061)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.xerces.parsers.AbstractSAXParser.endElement(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.xerces.parsers.DTDConfiguration.parse(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.commons.digester.Digester.parse(Digester.java:1548)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.quartz.xml.JobSchedulingDataProcessor.processFile(JobSchedulingDataProcessor.java:369)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.quartz.xml.JobSchedulingDataProcessor.processFileAndScheduleJobs(JobSchedulingDataProcessor.java:394)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.quartz.plugins.xml.JobInitializationPlugin.processFile(JobInitializationPlugin.java:341)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.quartz.plugins.xml.JobInitializationPlugin.start(JobInitializationPlugin.java:315)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.quartz.core.QuartzScheduler.startPlugins(QuartzScheduler.java:1800)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:367)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.quartz.impl.StdScheduler.start(StdScheduler.java:149)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.quartz.ee.servlet.QuartzInitializerServlet.init(QuartzInitializerServlet.java:126)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.quartz.ui.web.init.DefinitionInitializer.init(DefinitionInitializer.java:30)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1019)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:862)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:3991)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4335)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3021)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:947)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:381)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at javax.servlet.http.HttpServlet.service(HttpServlet.java:697)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:214)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardContextValve.invokeInternal(StandardContextValve.java:198)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:152)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:929)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:793)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:702)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:571)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:644)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.Thread.run(Thread.java:534)
+</td></tr>
+
+<tr>
+<td>3516</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.core.QuartzScheduler category">org.quartz.core.QuartzScheduler</td>
+<td title="Message">Scheduler bfSched_$_1 started.</td>
+</tr>
+</table>
+<br>
+</body></html><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Wed Oct 20 11:37:19 EDT 2004<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.webwork.config.DefaultConfiguration category">com.opensymphony.webwork.config.DefaultConfiguration</td>
+<td title="Message">Loading global messages from ApplicationResources</td>
+</tr>
+
+<tr>
+<td>30</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.webwork.views.velocity.VelocityManager category">com.opensymphony.webwork.views.velocity.VelocityManager</td>
+<td title="Message">Initializing velocity using 'velocity.properties'</td>
+</tr>
+
+<tr>
+<td>291</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.webwork.views.velocity.VelocityManager category">com.opensymphony.webwork.views.velocity.VelocityManager</td>
+<td title="Message">Initializing velocity using 'velocity.properties'</td>
+</tr>
+
+<tr>
+<td>511</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.xml.JobInitializationPlugin category">org.quartz.plugins.xml.JobInitializationPlugin</td>
+<td title="Message">Registering Quartz Job Initiazation Plug-in.</td>
+</tr>
+
+<tr>
+<td>521</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.management.ShutdownHookPlugin category">org.quartz.plugins.management.ShutdownHookPlugin</td>
+<td title="Message">Registering Quartz shutdown hook.</td>
+</tr>
+
+<tr>
+<td>521</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Using thread monitor-based data access locking (synchronization).</td>
+</tr>
+
+<tr>
+<td>792</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 Volatile Trigger(s).</td>
+</tr>
+
+<tr>
+<td>792</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 Volatile Job(s).</td>
+</tr>
+
+<tr>
+<td>1002</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Freed 0 triggers from 'acquired' / 'blocked' state.</td>
+</tr>
+
+<tr>
+<td>1162</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Recovering 0 jobs that were in-progress at the time of the last shut-down.</td>
+</tr>
+
+<tr>
+<td>1162</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Recovery complete.</td>
+</tr>
+
+<tr>
+<td>1182</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 'complete' triggers.</td>
+</tr>
+
+<tr>
+<td>1232</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 stale fired job entries.</td>
+</tr>
+
+<tr>
+<td>1312</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">JobStoreTX initialized.</td>
+</tr>
+
+<tr>
+<td>1312</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.StdSchedulerFactory category">org.quartz.impl.StdSchedulerFactory</td>
+<td title="Message">Quartz scheduler 'bfSched' initialized from specified file: 'E:\Brainfuse\conf\bf_quartz.properties'</td>
+</tr>
+
+<tr>
+<td>1312</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.StdSchedulerFactory category">org.quartz.impl.StdSchedulerFactory</td>
+<td title="Message">Quartz scheduler version: 1.4.2</td>
+</tr>
+
+<tr>
+<td>1332</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.xml.JobSchedulingDataProcessor category">org.quartz.xml.JobSchedulingDataProcessor</td>
+<td title="Message">Parsing XML file: quartz_jobs2.xml with systemId: null validating: false validating schema: null</td>
+</tr>
+
+<tr>
+<td>1392</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="org.quartz.plugins.xml.JobInitializationPlugin category">org.quartz.plugins.xml.JobInitializationPlugin</td>
+<td title="Message">Error scheduling jobs: Error at (9, 113: com.eggtheory.brainfuse.server.servercomponent.EveryTwoWeeksCalendar</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.lang.ClassNotFoundException: com.eggtheory.brainfuse.server.servercomponent.EveryTwoWeeksCalendar
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2540)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2566)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.commons.digester.Digester.startElement(Digester.java:1276)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.xerces.parsers.AbstractSAXParser.startElement(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanStartElement(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.xerces.parsers.DTDConfiguration.parse(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.commons.digester.Digester.parse(Digester.java:1548)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.quartz.xml.JobSchedulingDataProcessor.processFile(JobSchedulingDataProcessor.java:369)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.quartz.xml.JobSchedulingDataProcessor.processFileAndScheduleJobs(JobSchedulingDataProcessor.java:394)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.quartz.plugins.xml.JobInitializationPlugin.processFile(JobInitializationPlugin.java:341)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.quartz.plugins.xml.JobInitializationPlugin.start(JobInitializationPlugin.java:315)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.quartz.core.QuartzScheduler.startPlugins(QuartzScheduler.java:1800)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:367)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.quartz.impl.StdScheduler.start(StdScheduler.java:149)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.quartz.ee.servlet.QuartzInitializerServlet.init(QuartzInitializerServlet.java:126)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.quartz.ui.web.init.DefinitionInitializer.init(DefinitionInitializer.java:30)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1019)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:862)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:3991)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4335)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3021)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:947)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:381)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at javax.servlet.http.HttpServlet.service(HttpServlet.java:697)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:214)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardContextValve.invokeInternal(StandardContextValve.java:198)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:152)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:929)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:793)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:702)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:571)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:644)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.Thread.run(Thread.java:534)
+</td></tr>
+
+<tr>
+<td>1392</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.core.QuartzScheduler category">org.quartz.core.QuartzScheduler</td>
+<td title="Message">Scheduler bfSched_$_1 started.</td>
+</tr>
+</table>
+<br>
+</body></html><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Wed Oct 20 11:39:10 EDT 2004<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.webwork.config.DefaultConfiguration category">com.opensymphony.webwork.config.DefaultConfiguration</td>
+<td title="Message">Loading global messages from ApplicationResources</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.webwork.views.velocity.VelocityManager category">com.opensymphony.webwork.views.velocity.VelocityManager</td>
+<td title="Message">Initializing velocity using 'velocity.properties'</td>
+</tr>
+
+<tr>
+<td>260</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.webwork.views.velocity.VelocityManager category">com.opensymphony.webwork.views.velocity.VelocityManager</td>
+<td title="Message">Initializing velocity using 'velocity.properties'</td>
+</tr>
+
+<tr>
+<td>461</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.xml.JobInitializationPlugin category">org.quartz.plugins.xml.JobInitializationPlugin</td>
+<td title="Message">Registering Quartz Job Initiazation Plug-in.</td>
+</tr>
+
+<tr>
+<td>461</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.management.ShutdownHookPlugin category">org.quartz.plugins.management.ShutdownHookPlugin</td>
+<td title="Message">Registering Quartz shutdown hook.</td>
+</tr>
+
+<tr>
+<td>461</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Using thread monitor-based data access locking (synchronization).</td>
+</tr>
+
+<tr>
+<td>721</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 Volatile Trigger(s).</td>
+</tr>
+
+<tr>
+<td>721</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 Volatile Job(s).</td>
+</tr>
+
+<tr>
+<td>911</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Freed 0 triggers from 'acquired' / 'blocked' state.</td>
+</tr>
+
+<tr>
+<td>1092</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Recovering 0 jobs that were in-progress at the time of the last shut-down.</td>
+</tr>
+
+<tr>
+<td>1092</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Recovery complete.</td>
+</tr>
+
+<tr>
+<td>1122</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 'complete' triggers.</td>
+</tr>
+
+<tr>
+<td>1162</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 stale fired job entries.</td>
+</tr>
+
+<tr>
+<td>1242</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">JobStoreTX initialized.</td>
+</tr>
+
+<tr>
+<td>1242</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.StdSchedulerFactory category">org.quartz.impl.StdSchedulerFactory</td>
+<td title="Message">Quartz scheduler 'bfSched' initialized from specified file: 'E:\Brainfuse\conf\bf_quartz.properties'</td>
+</tr>
+
+<tr>
+<td>1242</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.StdSchedulerFactory category">org.quartz.impl.StdSchedulerFactory</td>
+<td title="Message">Quartz scheduler version: 1.4.2</td>
+</tr>
+
+<tr>
+<td>1262</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.xml.JobSchedulingDataProcessor category">org.quartz.xml.JobSchedulingDataProcessor</td>
+<td title="Message">Parsing XML file: quartz_jobs2.xml with systemId: null validating: false validating schema: null</td>
+</tr>
+
+<tr>
+<td>5238</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="org.quartz.plugins.xml.JobInitializationPlugin category">org.quartz.plugins.xml.JobInitializationPlugin</td>
+<td title="Message">Error scheduling jobs: Error at (103, 11: null</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.lang.reflect.InvocationTargetException
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2540)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2566)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.commons.digester.Digester.endElement(Digester.java:1061)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.xerces.parsers.AbstractSAXParser.endElement(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.xerces.parsers.DTDConfiguration.parse(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.commons.digester.Digester.parse(Digester.java:1548)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.quartz.xml.JobSchedulingDataProcessor.processFile(JobSchedulingDataProcessor.java:369)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.quartz.xml.JobSchedulingDataProcessor.processFileAndScheduleJobs(JobSchedulingDataProcessor.java:394)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.quartz.plugins.xml.JobInitializationPlugin.processFile(JobInitializationPlugin.java:341)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.quartz.plugins.xml.JobInitializationPlugin.start(JobInitializationPlugin.java:315)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.quartz.core.QuartzScheduler.startPlugins(QuartzScheduler.java:1800)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:367)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.quartz.impl.StdScheduler.start(StdScheduler.java:149)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.quartz.ee.servlet.QuartzInitializerServlet.init(QuartzInitializerServlet.java:126)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.quartz.ui.web.init.DefinitionInitializer.init(DefinitionInitializer.java:30)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1019)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:862)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:3991)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4335)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3021)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:947)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:381)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at javax.servlet.http.HttpServlet.service(HttpServlet.java:697)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:214)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardContextValve.invokeInternal(StandardContextValve.java:198)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:152)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:929)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:793)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:702)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:571)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:644)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.Thread.run(Thread.java:534)
+</td></tr>
+
+<tr>
+<td>5238</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.core.QuartzScheduler category">org.quartz.core.QuartzScheduler</td>
+<td title="Message">Scheduler bfSched_$_1 started.</td>
+</tr>
+
+<tr>
+<td>61298</td>
+<td title="QuartzScheduler_bfSched-1_MisfireHandler thread">QuartzScheduler_bfSched-1_MisfireHandler</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Handling 1 triggers that missed their scheduled fire-time.</td>
+</tr>
+
+<tr>
+<td>62710</td>
+<td title="bfSched_Worker-1 thread">bfSched_Worker-1</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:40:13 10/20/2004</td>
+</tr>
+
+<tr>
+<td>63782</td>
+<td title="bfSched_Worker-0 thread">bfSched_Worker-0</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:40:14 10/20/2004</td>
+</tr>
+
+<tr>
+<td>66395</td>
+<td title="bfSched_Worker-1 thread">bfSched_Worker-1</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:40:17 10/20/2004 and reports: null</td>
+</tr>
+
+<tr>
+<td>66395</td>
+<td title="bfSched_Worker-0 thread">bfSched_Worker-0</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:40:17 10/20/2004 and reports: null</td>
+</tr>
+</table>
+<br>
+</body></html><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Wed Oct 20 11:43:14 EDT 2004<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.webwork.config.DefaultConfiguration category">com.opensymphony.webwork.config.DefaultConfiguration</td>
+<td title="Message">Loading global messages from ApplicationResources</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.webwork.views.velocity.VelocityManager category">com.opensymphony.webwork.views.velocity.VelocityManager</td>
+<td title="Message">Initializing velocity using 'velocity.properties'</td>
+</tr>
+
+<tr>
+<td>280</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.webwork.views.velocity.VelocityManager category">com.opensymphony.webwork.views.velocity.VelocityManager</td>
+<td title="Message">Initializing velocity using 'velocity.properties'</td>
+</tr>
+
+<tr>
+<td>461</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.xml.JobInitializationPlugin category">org.quartz.plugins.xml.JobInitializationPlugin</td>
+<td title="Message">Registering Quartz Job Initiazation Plug-in.</td>
+</tr>
+
+<tr>
+<td>461</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.management.ShutdownHookPlugin category">org.quartz.plugins.management.ShutdownHookPlugin</td>
+<td title="Message">Registering Quartz shutdown hook.</td>
+</tr>
+
+<tr>
+<td>461</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Using thread monitor-based data access locking (synchronization).</td>
+</tr>
+
+<tr>
+<td>741</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 Volatile Trigger(s).</td>
+</tr>
+
+<tr>
+<td>741</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 Volatile Job(s).</td>
+</tr>
+
+<tr>
+<td>961</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Freed 0 triggers from 'acquired' / 'blocked' state.</td>
+</tr>
+
+<tr>
+<td>1142</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Recovering 0 jobs that were in-progress at the time of the last shut-down.</td>
+</tr>
+
+<tr>
+<td>1142</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Recovery complete.</td>
+</tr>
+
+<tr>
+<td>1172</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 'complete' triggers.</td>
+</tr>
+
+<tr>
+<td>1222</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 stale fired job entries.</td>
+</tr>
+
+<tr>
+<td>1292</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">JobStoreTX initialized.</td>
+</tr>
+
+<tr>
+<td>1292</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.StdSchedulerFactory category">org.quartz.impl.StdSchedulerFactory</td>
+<td title="Message">Quartz scheduler 'bfSched' initialized from specified file: 'E:\Brainfuse\conf\bf_quartz.properties'</td>
+</tr>
+
+<tr>
+<td>1292</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.StdSchedulerFactory category">org.quartz.impl.StdSchedulerFactory</td>
+<td title="Message">Quartz scheduler version: 1.4.2</td>
+</tr>
+
+<tr>
+<td>1312</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.xml.JobSchedulingDataProcessor category">org.quartz.xml.JobSchedulingDataProcessor</td>
+<td title="Message">Parsing XML file: quartz_jobs2.xml with systemId: null validating: false validating schema: null</td>
+</tr>
+
+<tr>
+<td>7301</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.xml.JobSchedulingDataProcessor category">org.quartz.xml.JobSchedulingDataProcessor</td>
+<td title="Message">Scheduling 4 parsed jobs.</td>
+</tr>
+
+<tr>
+<td>8052</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.core.QuartzScheduler category">org.quartz.core.QuartzScheduler</td>
+<td title="Message">Scheduler bfSched_$_1 started.</td>
+</tr>
+</table>
+<br>
+</body></html><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Wed Oct 20 11:43:23 EDT 2004<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.webwork.config.DefaultConfiguration category">com.opensymphony.webwork.config.DefaultConfiguration</td>
+<td title="Message">Loading global messages from ApplicationResources</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.webwork.views.velocity.VelocityManager category">com.opensymphony.webwork.views.velocity.VelocityManager</td>
+<td title="Message">Initializing velocity using 'velocity.properties'</td>
+</tr>
+
+<tr>
+<td>260</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.webwork.views.velocity.VelocityManager category">com.opensymphony.webwork.views.velocity.VelocityManager</td>
+<td title="Message">Initializing velocity using 'velocity.properties'</td>
+</tr>
+
+<tr>
+<td>451</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.xml.JobInitializationPlugin category">org.quartz.plugins.xml.JobInitializationPlugin</td>
+<td title="Message">Registering Quartz Job Initiazation Plug-in.</td>
+</tr>
+
+<tr>
+<td>451</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.management.ShutdownHookPlugin category">org.quartz.plugins.management.ShutdownHookPlugin</td>
+<td title="Message">Registering Quartz shutdown hook.</td>
+</tr>
+
+<tr>
+<td>451</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Using thread monitor-based data access locking (synchronization).</td>
+</tr>
+
+<tr>
+<td>741</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 Volatile Trigger(s).</td>
+</tr>
+
+<tr>
+<td>741</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 Volatile Job(s).</td>
+</tr>
+
+<tr>
+<td>941</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Freed 0 triggers from 'acquired' / 'blocked' state.</td>
+</tr>
+
+<tr>
+<td>1041</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Handling 1 triggers that missed their scheduled fire-time.</td>
+</tr>
+
+<tr>
+<td>1662</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Recovering 0 jobs that were in-progress at the time of the last shut-down.</td>
+</tr>
+
+<tr>
+<td>1662</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Recovery complete.</td>
+</tr>
+
+<tr>
+<td>1682</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 'complete' triggers.</td>
+</tr>
+
+<tr>
+<td>1732</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 stale fired job entries.</td>
+</tr>
+
+<tr>
+<td>1813</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">JobStoreTX initialized.</td>
+</tr>
+
+<tr>
+<td>1813</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.StdSchedulerFactory category">org.quartz.impl.StdSchedulerFactory</td>
+<td title="Message">Quartz scheduler 'bfSched' initialized from specified file: 'E:\Brainfuse\conf\bf_quartz.properties'</td>
+</tr>
+
+<tr>
+<td>1813</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.StdSchedulerFactory category">org.quartz.impl.StdSchedulerFactory</td>
+<td title="Message">Quartz scheduler version: 1.4.2</td>
+</tr>
+
+<tr>
+<td>1833</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.xml.JobSchedulingDataProcessor category">org.quartz.xml.JobSchedulingDataProcessor</td>
+<td title="Message">Parsing XML file: quartz_jobs2.xml with systemId: null validating: false validating schema: null</td>
+</tr>
+
+<tr>
+<td>3265</td>
+<td title="bfSched_Worker-0 thread">bfSched_Worker-0</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:43:27 10/20/2004</td>
+</tr>
+
+<tr>
+<td>4046</td>
+<td title="bfSched_Worker-2 thread">bfSched_Worker-2</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:43:28 10/20/2004</td>
+</tr>
+
+<tr>
+<td>6349</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.xml.JobSchedulingDataProcessor category">org.quartz.xml.JobSchedulingDataProcessor</td>
+<td title="Message">Scheduling 4 parsed jobs.</td>
+</tr>
+
+<tr>
+<td>6619</td>
+<td title="bfSched_Worker-0 thread">bfSched_Worker-0</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:43:31 10/20/2004 and reports: null</td>
+</tr>
+
+<tr>
+<td>6619</td>
+<td title="bfSched_Worker-2 thread">bfSched_Worker-2</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:43:31 10/20/2004 and reports: null</td>
+</tr>
+
+<tr>
+<td>7020</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.core.QuartzScheduler category">org.quartz.core.QuartzScheduler</td>
+<td title="Message">Scheduler bfSched_$_1 started.</td>
+</tr>
+</table>
+<br>
+</body></html><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Wed Oct 20 11:44:05 EDT 2004<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.webwork.config.DefaultConfiguration category">com.opensymphony.webwork.config.DefaultConfiguration</td>
+<td title="Message">Loading global messages from ApplicationResources</td>
+</tr>
+
+<tr>
+<td>20</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.webwork.views.velocity.VelocityManager category">com.opensymphony.webwork.views.velocity.VelocityManager</td>
+<td title="Message">Initializing velocity using 'velocity.properties'</td>
+</tr>
+
+<tr>
+<td>291</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.webwork.views.velocity.VelocityManager category">com.opensymphony.webwork.views.velocity.VelocityManager</td>
+<td title="Message">Initializing velocity using 'velocity.properties'</td>
+</tr>
+
+<tr>
+<td>501</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.xml.JobInitializationPlugin category">org.quartz.plugins.xml.JobInitializationPlugin</td>
+<td title="Message">Registering Quartz Job Initiazation Plug-in.</td>
+</tr>
+
+<tr>
+<td>501</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.management.ShutdownHookPlugin category">org.quartz.plugins.management.ShutdownHookPlugin</td>
+<td title="Message">Registering Quartz shutdown hook.</td>
+</tr>
+
+<tr>
+<td>501</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Using thread monitor-based data access locking (synchronization).</td>
+</tr>
+
+<tr>
+<td>751</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 Volatile Trigger(s).</td>
+</tr>
+
+<tr>
+<td>751</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 Volatile Job(s).</td>
+</tr>
+
+<tr>
+<td>931</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Freed 0 triggers from 'acquired' / 'blocked' state.</td>
+</tr>
+
+<tr>
+<td>1122</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Recovering 0 jobs that were in-progress at the time of the last shut-down.</td>
+</tr>
+
+<tr>
+<td>1122</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Recovery complete.</td>
+</tr>
+
+<tr>
+<td>1142</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 'complete' triggers.</td>
+</tr>
+
+<tr>
+<td>1192</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 stale fired job entries.</td>
+</tr>
+
+<tr>
+<td>1262</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">JobStoreTX initialized.</td>
+</tr>
+
+<tr>
+<td>1262</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.StdSchedulerFactory category">org.quartz.impl.StdSchedulerFactory</td>
+<td title="Message">Quartz scheduler 'bfSched' initialized from specified file: 'E:\Brainfuse\conf\bf_quartz.properties'</td>
+</tr>
+
+<tr>
+<td>1262</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.StdSchedulerFactory category">org.quartz.impl.StdSchedulerFactory</td>
+<td title="Message">Quartz scheduler version: 1.4.2</td>
+</tr>
+
+<tr>
+<td>1292</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.xml.JobSchedulingDataProcessor category">org.quartz.xml.JobSchedulingDataProcessor</td>
+<td title="Message">Parsing XML file: quartz_jobs2.xml with systemId: null validating: false validating schema: null</td>
+</tr>
+
+<tr>
+<td>6429</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.xml.JobSchedulingDataProcessor category">org.quartz.xml.JobSchedulingDataProcessor</td>
+<td title="Message">Scheduling 4 parsed jobs.</td>
+</tr>
+
+<tr>
+<td>7371</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.core.QuartzScheduler category">org.quartz.core.QuartzScheduler</td>
+<td title="Message">Scheduler bfSched_$_1 started.</td>
+</tr>
+</table>
+<br>
+</body></html><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Wed Oct 20 11:46:40 EDT 2004<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>1312</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.webwork.config.DefaultConfiguration category">com.opensymphony.webwork.config.DefaultConfiguration</td>
+<td title="Message">Loading global messages from ApplicationResources</td>
+</tr>
+
+<tr>
+<td>1322</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.webwork.views.velocity.VelocityManager category">com.opensymphony.webwork.views.velocity.VelocityManager</td>
+<td title="Message">Initializing velocity using 'velocity.properties'</td>
+</tr>
+
+<tr>
+<td>1602</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.webwork.views.velocity.VelocityManager category">com.opensymphony.webwork.views.velocity.VelocityManager</td>
+<td title="Message">Initializing velocity using 'velocity.properties'</td>
+</tr>
+
+<tr>
+<td>1793</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.xml.JobInitializationPlugin category">org.quartz.plugins.xml.JobInitializationPlugin</td>
+<td title="Message">Registering Quartz Job Initiazation Plug-in.</td>
+</tr>
+
+<tr>
+<td>1803</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.management.ShutdownHookPlugin category">org.quartz.plugins.management.ShutdownHookPlugin</td>
+<td title="Message">Registering Quartz shutdown hook.</td>
+</tr>
+
+<tr>
+<td>1803</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Using thread monitor-based data access locking (synchronization).</td>
+</tr>
+
+<tr>
+<td>2153</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 Volatile Trigger(s).</td>
+</tr>
+
+<tr>
+<td>2163</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 Volatile Job(s).</td>
+</tr>
+
+<tr>
+<td>2353</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Freed 0 triggers from 'acquired' / 'blocked' state.</td>
+</tr>
+
+<tr>
+<td>2444</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Handling 1 triggers that missed their scheduled fire-time.</td>
+</tr>
+
+<tr>
+<td>3065</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Recovering 0 jobs that were in-progress at the time of the last shut-down.</td>
+</tr>
+
+<tr>
+<td>3065</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Recovery complete.</td>
+</tr>
+
+<tr>
+<td>3095</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 'complete' triggers.</td>
+</tr>
+
+<tr>
+<td>3155</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 stale fired job entries.</td>
+</tr>
+
+<tr>
+<td>3315</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">JobStoreTX initialized.</td>
+</tr>
+
+<tr>
+<td>3325</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.StdSchedulerFactory category">org.quartz.impl.StdSchedulerFactory</td>
+<td title="Message">Quartz scheduler 'bfSched' initialized from specified file: 'E:\Brainfuse\conf\bf_quartz.properties'</td>
+</tr>
+
+<tr>
+<td>3325</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.StdSchedulerFactory category">org.quartz.impl.StdSchedulerFactory</td>
+<td title="Message">Quartz scheduler version: 1.4.2</td>
+</tr>
+
+<tr>
+<td>3355</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.xml.JobSchedulingDataProcessor category">org.quartz.xml.JobSchedulingDataProcessor</td>
+<td title="Message">Parsing XML file: quartz_jobs2.xml with systemId: null validating: false validating schema: null</td>
+</tr>
+
+<tr>
+<td>5268</td>
+<td title="bfSched_Worker-2 thread">bfSched_Worker-2</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:46:45 10/20/2004</td>
+</tr>
+
+<tr>
+<td>6229</td>
+<td title="bfSched_Worker-0 thread">bfSched_Worker-0</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:46:46 10/20/2004</td>
+</tr>
+
+<tr>
+<td>8612</td>
+<td title="bfSched_Worker-2 thread">bfSched_Worker-2</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:46:48 10/20/2004 and reports: null</td>
+</tr>
+
+<tr>
+<td>8612</td>
+<td title="bfSched_Worker-0 thread">bfSched_Worker-0</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:46:48 10/20/2004 and reports: null</td>
+</tr>
+
+<tr>
+<td>10385</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.xml.JobSchedulingDataProcessor category">org.quartz.xml.JobSchedulingDataProcessor</td>
+<td title="Message">Scheduling 4 parsed jobs.</td>
+</tr>
+
+<tr>
+<td>12118</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.core.QuartzScheduler category">org.quartz.core.QuartzScheduler</td>
+<td title="Message">Scheduler bfSched_$_1 started.</td>
+</tr>
+
+<tr>
+<td>63401</td>
+<td title="QuartzScheduler_bfSched-1_MisfireHandler thread">QuartzScheduler_bfSched-1_MisfireHandler</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Handling 1 triggers that missed their scheduled fire-time.</td>
+</tr>
+
+<tr>
+<td>64583</td>
+<td title="bfSched_Worker-0 thread">bfSched_Worker-0</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:47:44 10/20/2004</td>
+</tr>
+
+<tr>
+<td>64593</td>
+<td title="bfSched_Worker-0 thread">bfSched_Worker-0</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:47:44 10/20/2004 and reports: null</td>
+</tr>
+
+<tr>
+<td>65915</td>
+<td title="bfSched_Worker-0 thread">bfSched_Worker-0</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:47:45 10/20/2004</td>
+</tr>
+
+<tr>
+<td>172889</td>
+<td title="bfSched_Worker-0 thread">bfSched_Worker-0</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:49:32 10/20/2004 and reports: null</td>
+</tr>
+</table>
+<br>
+</body></html><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Wed Oct 20 11:51:45 EDT 2004<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.webwork.config.DefaultConfiguration category">com.opensymphony.webwork.config.DefaultConfiguration</td>
+<td title="Message">Loading global messages from ApplicationResources</td>
+</tr>
+
+<tr>
+<td>20</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.webwork.views.velocity.VelocityManager category">com.opensymphony.webwork.views.velocity.VelocityManager</td>
+<td title="Message">Initializing velocity using 'velocity.properties'</td>
+</tr>
+
+<tr>
+<td>260</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.webwork.views.velocity.VelocityManager category">com.opensymphony.webwork.views.velocity.VelocityManager</td>
+<td title="Message">Initializing velocity using 'velocity.properties'</td>
+</tr>
+
+<tr>
+<td>450</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.xml.JobInitializationPlugin category">org.quartz.plugins.xml.JobInitializationPlugin</td>
+<td title="Message">Registering Quartz Job Initiazation Plug-in.</td>
+</tr>
+
+<tr>
+<td>450</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.management.ShutdownHookPlugin category">org.quartz.plugins.management.ShutdownHookPlugin</td>
+<td title="Message">Registering Quartz shutdown hook.</td>
+</tr>
+
+<tr>
+<td>450</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Using thread monitor-based data access locking (synchronization).</td>
+</tr>
+
+<tr>
+<td>761</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 Volatile Trigger(s).</td>
+</tr>
+
+<tr>
+<td>771</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 Volatile Job(s).</td>
+</tr>
+
+<tr>
+<td>951</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Freed 0 triggers from 'acquired' / 'blocked' state.</td>
+</tr>
+
+<tr>
+<td>1131</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Recovering 0 jobs that were in-progress at the time of the last shut-down.</td>
+</tr>
+
+<tr>
+<td>1141</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Recovery complete.</td>
+</tr>
+
+<tr>
+<td>1162</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 'complete' triggers.</td>
+</tr>
+
+<tr>
+<td>1202</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 stale fired job entries.</td>
+</tr>
+
+<tr>
+<td>1272</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">JobStoreTX initialized.</td>
+</tr>
+
+<tr>
+<td>1272</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.StdSchedulerFactory category">org.quartz.impl.StdSchedulerFactory</td>
+<td title="Message">Quartz scheduler 'bfSched' initialized from specified file: 'E:\Brainfuse\conf\bf_quartz.properties'</td>
+</tr>
+
+<tr>
+<td>1272</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.StdSchedulerFactory category">org.quartz.impl.StdSchedulerFactory</td>
+<td title="Message">Quartz scheduler version: 1.4.2</td>
+</tr>
+
+<tr>
+<td>1292</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.xml.JobSchedulingDataProcessor category">org.quartz.xml.JobSchedulingDataProcessor</td>
+<td title="Message">Parsing XML file: quartz_jobs2.xml with systemId: null validating: false validating schema: null</td>
+</tr>
+
+<tr>
+<td>6119</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.xml.JobSchedulingDataProcessor category">org.quartz.xml.JobSchedulingDataProcessor</td>
+<td title="Message">Scheduling 4 parsed jobs.</td>
+</tr>
+
+<tr>
+<td>6730</td>
+<td title="ContainerBackgroundProcessor[StandardEngine[Catalina]] thread">ContainerBackgroundProcessor[StandardEngine[Catalina]]</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.core.QuartzScheduler category">org.quartz.core.QuartzScheduler</td>
+<td title="Message">Scheduler bfSched_$_1 started.</td>
+</tr>
+
+<tr>
+<td>35581</td>
+<td title="http-8080-Processor2 thread">http-8080-Processor2</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.xwork.ActionSupport category">com.opensymphony.xwork.ActionSupport</td>
+<td title="Message">command is = </td>
+</tr>
+
+<tr>
+<td>58764</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.opensymphony.webwork.dispatcher.ServletDispatcher category">com.opensymphony.webwork.dispatcher.ServletDispatcher</td>
+<td title="Message">Could not execute action</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">javax.servlet.ServletException: 
+
+You appear to have an INCOMPATIBLE VERSION of the Commons Lang library.  
+Displaytag requires version 2 of this library, and you appear to have a prior version in 
+your classpath.  You must remove this prior version AND ensure that ONLY version 2 is in 
+your classpath.
+ If commons-lang-1.x is in your classpath, be sure to remove it. 
+Be sure to delete all cached or temporary jar files from your application server; Tomcat 
+users should be sure to also check the CATALINA_HOME/shared folder; you may need to 
+restart the server. 
+commons-lang-2.jar is available in the displaytag distribution, or from the Jakarta 
+website at http://jakarta.apache.org/commons 
+
+.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.jasper.runtime.PageContextImpl.doHandlePageException(PageContextImpl.java:825)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.jasper.runtime.PageContextImpl.handlePageException(PageContextImpl.java:758)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.jsp.WEB_002dINF.jsp.listAllJobs_jsp._jspService(listAllJobs_jsp.java:162)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:94)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:298)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:292)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:236)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:703)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:463)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:398)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.webwork.dispatcher.ServletDispatcherResult.doExecute(ServletDispatcherResult.java:80)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.webwork.dispatcher.WebWorkResultSupport.execute(WebWorkResultSupport.java:115)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.executeResult(DefaultActionInvocation.java:263)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:187)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.interceptor.AroundInterceptor.intercept(AroundInterceptor.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionInvocation.invoke(DefaultActionInvocation.java:165)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.xwork.DefaultActionProxy.execute(DefaultActionProxy.java:115)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.webwork.dispatcher.ServletDispatcher.serviceAction(ServletDispatcher.java:278)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.webwork.dispatcher.ServletDispatcher.service(ServletDispatcher.java:248)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.webwork.lifecycle.RequestLifecycleFilter.doFilter(RequestLifecycleFilter.java:75)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.module.sitemesh.filter.PageFilter.parsePage(PageFilter.java:142)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.opensymphony.module.sitemesh.filter.PageFilter.doFilter(PageFilter.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.securityfilter.filter.SecurityFilter.doFilter(SecurityFilter.java:188)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:186)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:214)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardContextValve.invokeInternal(StandardContextValve.java:198)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:152)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:929)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:793)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:702)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:571)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:644)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.Thread.run(Thread.java:534)
+</td></tr>
+
+<tr>
+<td>61338</td>
+<td title="QuartzScheduler_bfSched-1_MisfireHandler thread">QuartzScheduler_bfSched-1_MisfireHandler</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Handling 1 triggers that missed their scheduled fire-time.</td>
+</tr>
+
+<tr>
+<td>63661</td>
+<td title="bfSched_Worker-0 thread">bfSched_Worker-0</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:52:49 10/20/2004</td>
+</tr>
+
+<tr>
+<td>64453</td>
+<td title="bfSched_Worker-1 thread">bfSched_Worker-1</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:52:50 10/20/2004</td>
+</tr>
+</table>
+<br>
+</body></html><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Wed Oct 20 11:54:32 EDT 2004<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.webwork.config.DefaultConfiguration category">com.opensymphony.webwork.config.DefaultConfiguration</td>
+<td title="Message">Loading global messages from ApplicationResources</td>
+</tr>
+
+<tr>
+<td>20</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.webwork.views.velocity.VelocityManager category">com.opensymphony.webwork.views.velocity.VelocityManager</td>
+<td title="Message">Initializing velocity using 'velocity.properties'</td>
+</tr>
+
+<tr>
+<td>270</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.webwork.views.velocity.VelocityManager category">com.opensymphony.webwork.views.velocity.VelocityManager</td>
+<td title="Message">Initializing velocity using 'velocity.properties'</td>
+</tr>
+
+<tr>
+<td>460</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.xml.JobInitializationPlugin category">org.quartz.plugins.xml.JobInitializationPlugin</td>
+<td title="Message">Registering Quartz Job Initiazation Plug-in.</td>
+</tr>
+
+<tr>
+<td>470</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.management.ShutdownHookPlugin category">org.quartz.plugins.management.ShutdownHookPlugin</td>
+<td title="Message">Registering Quartz shutdown hook.</td>
+</tr>
+
+<tr>
+<td>470</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Using thread monitor-based data access locking (synchronization).</td>
+</tr>
+
+<tr>
+<td>731</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 Volatile Trigger(s).</td>
+</tr>
+
+<tr>
+<td>731</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 Volatile Job(s).</td>
+</tr>
+
+<tr>
+<td>911</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Freed 0 triggers from 'acquired' / 'blocked' state.</td>
+</tr>
+
+<tr>
+<td>1091</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Recovering 2 jobs that were in-progress at the time of the last shut-down.</td>
+</tr>
+
+<tr>
+<td>1842</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Recovery complete.</td>
+</tr>
+
+<tr>
+<td>2213</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 1 'complete' triggers.</td>
+</tr>
+
+<tr>
+<td>2273</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 2 stale fired job entries.</td>
+</tr>
+
+<tr>
+<td>2533</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">JobStoreTX initialized.</td>
+</tr>
+
+<tr>
+<td>2533</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.StdSchedulerFactory category">org.quartz.impl.StdSchedulerFactory</td>
+<td title="Message">Quartz scheduler 'bfSched' initialized from specified file: 'E:\Brainfuse\conf\bf_quartz.properties'</td>
+</tr>
+
+<tr>
+<td>2533</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.StdSchedulerFactory category">org.quartz.impl.StdSchedulerFactory</td>
+<td title="Message">Quartz scheduler version: 1.4.2</td>
+</tr>
+
+<tr>
+<td>2553</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.xml.JobSchedulingDataProcessor category">org.quartz.xml.JobSchedulingDataProcessor</td>
+<td title="Message">Parsing XML file: quartz_jobs2.xml with systemId: null validating: false validating schema: null</td>
+</tr>
+
+<tr>
+<td>7420</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.xml.JobSchedulingDataProcessor category">org.quartz.xml.JobSchedulingDataProcessor</td>
+<td title="Message">Scheduling 4 parsed jobs.</td>
+</tr>
+
+<tr>
+<td>8071</td>
+<td title="http-8080-Processor3 thread">http-8080-Processor3</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.core.QuartzScheduler category">org.quartz.core.QuartzScheduler</td>
+<td title="Message">Scheduler bfSched_$_1 started.</td>
+</tr>
+
+<tr>
+<td>35441</td>
+<td title="http-8080-Processor4 thread">http-8080-Processor4</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.xwork.DefaultActionInvocation category">com.opensymphony.xwork.DefaultActionInvocation</td>
+<td title="Message">Executing action method = runNow</td>
+</tr>
+
+<tr>
+<td>35711</td>
+<td title="http-8080-Processor4 thread">http-8080-Processor4</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.xwork.DefaultActionInvocation category">com.opensymphony.xwork.DefaultActionInvocation</td>
+<td title="Message">Executing action method = view</td>
+</tr>
+
+<tr>
+<td>36663</td>
+<td title="bfSched_Worker-0 thread">bfSched_Worker-0</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupPayroll.jobPayroll fired (by trigger MANUAL_TRIGGER.MT_49qp2m64sec1s) at:  11:55:10 10/20/2004</td>
+</tr>
+
+<tr>
+<td>37043</td>
+<td title="bfSched_Worker-0 thread">bfSched_Worker-0</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupPayroll.jobPayroll execution complete at  11:55:10 10/20/2004 and reports: null</td>
+</tr>
+
+<tr>
+<td>63371</td>
+<td title="QuartzScheduler_bfSched-1_MisfireHandler thread">QuartzScheduler_bfSched-1_MisfireHandler</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Handling 3 triggers that missed their scheduled fire-time.</td>
+</tr>
+
+<tr>
+<td>65354</td>
+<td title="bfSched_Worker-1 thread">bfSched_Worker-1</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger RECOVERING_JOBS.recover_1_1098287674512) at:  11:55:38 10/20/2004</td>
+</tr>
+
+<tr>
+<td>66225</td>
+<td title="bfSched_Worker-0 thread">bfSched_Worker-0</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger RECOVERING_JOBS.recover_1_1098287674513) at:  11:55:39 10/20/2004</td>
+</tr>
+
+<tr>
+<td>67066</td>
+<td title="bfSched_Worker-2 thread">bfSched_Worker-2</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:55:40 10/20/2004</td>
+</tr>
+
+<tr>
+<td>215550</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.xwork.DefaultActionInvocation category">com.opensymphony.xwork.DefaultActionInvocation</td>
+<td title="Message">Executing action method = runNow</td>
+</tr>
+
+<tr>
+<td>216060</td>
+<td title="http-8080-Processor8 thread">http-8080-Processor8</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.xwork.DefaultActionInvocation category">com.opensymphony.xwork.DefaultActionInvocation</td>
+<td title="Message">Executing action method = view</td>
+</tr>
+</table>
+<br>
+</body></html><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Wed Oct 20 11:58:28 EDT 2004<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="http-8080-Processor2 thread">http-8080-Processor2</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.webwork.config.DefaultConfiguration category">com.opensymphony.webwork.config.DefaultConfiguration</td>
+<td title="Message">Loading global messages from ApplicationResources</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td title="http-8080-Processor2 thread">http-8080-Processor2</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.webwork.views.velocity.VelocityManager category">com.opensymphony.webwork.views.velocity.VelocityManager</td>
+<td title="Message">Initializing velocity using 'velocity.properties'</td>
+</tr>
+
+<tr>
+<td>260</td>
+<td title="http-8080-Processor2 thread">http-8080-Processor2</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.webwork.views.velocity.VelocityManager category">com.opensymphony.webwork.views.velocity.VelocityManager</td>
+<td title="Message">Initializing velocity using 'velocity.properties'</td>
+</tr>
+
+<tr>
+<td>450</td>
+<td title="http-8080-Processor2 thread">http-8080-Processor2</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.xml.JobInitializationPlugin category">org.quartz.plugins.xml.JobInitializationPlugin</td>
+<td title="Message">Registering Quartz Job Initiazation Plug-in.</td>
+</tr>
+
+<tr>
+<td>450</td>
+<td title="http-8080-Processor2 thread">http-8080-Processor2</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.management.ShutdownHookPlugin category">org.quartz.plugins.management.ShutdownHookPlugin</td>
+<td title="Message">Registering Quartz shutdown hook.</td>
+</tr>
+
+<tr>
+<td>450</td>
+<td title="http-8080-Processor2 thread">http-8080-Processor2</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Using thread monitor-based data access locking (synchronization).</td>
+</tr>
+
+<tr>
+<td>841</td>
+<td title="http-8080-Processor2 thread">http-8080-Processor2</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 Volatile Trigger(s).</td>
+</tr>
+
+<tr>
+<td>841</td>
+<td title="http-8080-Processor2 thread">http-8080-Processor2</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 0 Volatile Job(s).</td>
+</tr>
+
+<tr>
+<td>1041</td>
+<td title="http-8080-Processor2 thread">http-8080-Processor2</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Freed 0 triggers from 'acquired' / 'blocked' state.</td>
+</tr>
+
+<tr>
+<td>1231</td>
+<td title="http-8080-Processor2 thread">http-8080-Processor2</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Recovering 4 jobs that were in-progress at the time of the last shut-down.</td>
+</tr>
+
+<tr>
+<td>3114</td>
+<td title="http-8080-Processor2 thread">http-8080-Processor2</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Recovery complete.</td>
+</tr>
+
+<tr>
+<td>3925</td>
+<td title="http-8080-Processor2 thread">http-8080-Processor2</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 3 'complete' triggers.</td>
+</tr>
+
+<tr>
+<td>3965</td>
+<td title="http-8080-Processor2 thread">http-8080-Processor2</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Removed 4 stale fired job entries.</td>
+</tr>
+
+<tr>
+<td>4045</td>
+<td title="http-8080-Processor2 thread">http-8080-Processor2</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">JobStoreTX initialized.</td>
+</tr>
+
+<tr>
+<td>4045</td>
+<td title="http-8080-Processor2 thread">http-8080-Processor2</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.StdSchedulerFactory category">org.quartz.impl.StdSchedulerFactory</td>
+<td title="Message">Quartz scheduler 'bfSched' initialized from specified file: 'E:\Brainfuse\conf\bf_quartz.properties'</td>
+</tr>
+
+<tr>
+<td>4055</td>
+<td title="http-8080-Processor2 thread">http-8080-Processor2</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.StdSchedulerFactory category">org.quartz.impl.StdSchedulerFactory</td>
+<td title="Message">Quartz scheduler version: 1.4.2</td>
+</tr>
+
+<tr>
+<td>4075</td>
+<td title="http-8080-Processor2 thread">http-8080-Processor2</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.xml.JobSchedulingDataProcessor category">org.quartz.xml.JobSchedulingDataProcessor</td>
+<td title="Message">Parsing XML file: quartz_jobs2.xml with systemId: null validating: false validating schema: null</td>
+</tr>
+
+<tr>
+<td>10344</td>
+<td title="http-8080-Processor2 thread">http-8080-Processor2</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.xml.JobSchedulingDataProcessor category">org.quartz.xml.JobSchedulingDataProcessor</td>
+<td title="Message">Scheduling 4 parsed jobs.</td>
+</tr>
+
+<tr>
+<td>11015</td>
+<td title="http-8080-Processor2 thread">http-8080-Processor2</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.core.QuartzScheduler category">org.quartz.core.QuartzScheduler</td>
+<td title="Message">Scheduler bfSched_$_1 started.</td>
+</tr>
+
+<tr>
+<td>39566</td>
+<td title="http-8080-Processor1 thread">http-8080-Processor1</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.xwork.DefaultActionInvocation category">com.opensymphony.xwork.DefaultActionInvocation</td>
+<td title="Message">Executing action method = edit</td>
+</tr>
+
+<tr>
+<td>64302</td>
+<td title="QuartzScheduler_bfSched-1_MisfireHandler thread">QuartzScheduler_bfSched-1_MisfireHandler</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.impl.jdbcjobstore.JobStoreTX category">org.quartz.impl.jdbcjobstore.JobStoreTX</td>
+<td title="Message">Handling 5 triggers that missed their scheduled fire-time.</td>
+</tr>
+
+<tr>
+<td>68208</td>
+<td title="bfSched_Worker-2 thread">bfSched_Worker-2</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger RECOVERING_JOBS.recover_1_1098287910271) at:  11:59:37 10/20/2004</td>
+</tr>
+
+<tr>
+<td>68959</td>
+<td title="bfSched_Worker-1 thread">bfSched_Worker-1</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger RECOVERING_JOBS.recover_1_1098287910272) at:  11:59:37 10/20/2004</td>
+</tr>
+
+<tr>
+<td>69900</td>
+<td title="bfSched_Worker-0 thread">bfSched_Worker-0</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger RECOVERING_JOBS.recover_1_1098287910273) at:  11:59:38 10/20/2004</td>
+</tr>
+
+<tr>
+<td>77661</td>
+<td title="bfSched_Worker-0 thread">bfSched_Worker-0</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:59:46 10/20/2004 and reports: null</td>
+</tr>
+
+<tr>
+<td>77761</td>
+<td title="bfSched_Worker-2 thread">bfSched_Worker-2</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:59:46 10/20/2004 and reports: null</td>
+</tr>
+
+<tr>
+<td>77771</td>
+<td title="bfSched_Worker-1 thread">bfSched_Worker-1</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:59:46 10/20/2004 and reports: null</td>
+</tr>
+
+<tr>
+<td>78472</td>
+<td title="bfSched_Worker-0 thread">bfSched_Worker-0</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger RECOVERING_JOBS.recover_1_1098287910274) at:  11:59:47 10/20/2004</td>
+</tr>
+
+<tr>
+<td>79254</td>
+<td title="bfSched_Worker-2 thread">bfSched_Worker-2</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:59:48 10/20/2004</td>
+</tr>
+
+<tr>
+<td>79804</td>
+<td title="http-8080-Processor2 thread">http-8080-Processor2</td>
+<td title="Level">INFO</td>
+<td title="com.opensymphony.xwork.DefaultActionInvocation category">com.opensymphony.xwork.DefaultActionInvocation</td>
+<td title="Message">Executing action method = view</td>
+</tr>
+
+<tr>
+<td>80756</td>
+<td title="http-8080-Processor2 thread">http-8080-Processor2</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="org.quartz.ui.web.Util category">org.quartz.ui.web.Util</td>
+<td title="Message">The trigger recover_1_1098287910272 in group RECOVERING_JOBS was null</td>
+</tr>
+
+<tr>
+<td>82068</td>
+<td title="bfSched_Worker-0 thread">bfSched_Worker-0</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:59:51 10/20/2004 and reports: null</td>
+</tr>
+
+<tr>
+<td>82258</td>
+<td title="bfSched_Worker-1 thread">bfSched_Worker-1</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupTimeSheetOnce.jobTimeSheetOnce fired (by trigger trigGroupTimeSheeOnce.trigTimeSheeOnce) at:  11:59:51 10/20/2004</td>
+</tr>
+
+<tr>
+<td>83570</td>
+<td title="bfSched_Worker-2 thread">bfSched_Worker-2</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:59:52 10/20/2004 and reports: null</td>
+</tr>
+
+<tr>
+<td>84942</td>
+<td title="bfSched_Worker-1 thread">bfSched_Worker-1</td>
+<td title="Level">INFO</td>
+<td title="org.quartz.plugins.history.LoggingJobHistoryPlugin category">org.quartz.plugins.history.LoggingJobHistoryPlugin</td>
+<td title="Message">Job groupTimeSheetOnce.jobTimeSheetOnce execution complete at  11:59:53 10/20/2004 and reports: null</td>
+</tr>
